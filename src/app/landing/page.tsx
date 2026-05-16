@@ -1,30 +1,34 @@
 import type { Metadata } from "next";
 import { LandingPageContent } from "./landing-page-content";
 
-// Metadata for the landing page
+// Metadata yang disesuaikan untuk Crystal Service / Crystal Realms
 export const metadata: Metadata = {
-  title: "ShadcnStore - Modern Admin Dashboard Template",
+  title:
+    "Crystal Service - Elite Boosting & Professional Building | Crystal Realms",
   description:
-    "A beautiful and comprehensive admin dashboard template built with React, Next.js, TypeScript, and shadcn/ui. Perfect for building modern web applications.",
+    "The most trusted service providers in the Crystal Realms. Professional building, rapid grinding, secure account boosting, and trusted middleman services tailored for your ultimate gaming journey.",
   keywords: [
-    "admin dashboard",
-    "react",
-    "nextjs",
-    "typescript",
-    "shadcn/ui",
-    "tailwind css",
+    "crystal service",
+    "crystal realms",
+    "crystal realms service",
+    "crystal realms boosting",
+    "professional builder crystal realms",
+    "account boosting",
+    "trusted middleman",
+    "rotd stats",
   ],
   openGraph: {
-    title: "ShadcnStore - Modern Admin Dashboard Template",
+    title: "Crystal Service - Elite Boosting & Professional Building",
     description:
-      "A beautiful and comprehensive admin dashboard template built with React, Next.js, TypeScript, and shadcn/ui.",
+      "The most trusted service providers in the Crystal Realms. Elevate your gaming journey with professional building, fast grinding, and elite boosting.",
     type: "website",
+    url: "https://yourdomain.com", // Ganti dengan URL website asli kamu nanti
   },
   twitter: {
     card: "summary_large_image",
-    title: "ShadcnStore - Modern Admin Dashboard Template",
+    title: "Crystal Service - Elite Boosting & Professional Building",
     description:
-      "A beautiful and comprehensive admin dashboard template built with React, Next.js, TypeScript, and shadcn/ui.",
+      "The most trusted service providers in the Crystal Realms. Fast, secure, and legendary boosting services.",
   },
 };
 
