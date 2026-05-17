@@ -18,6 +18,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { Logo } from "@/components/logo";
+import Data from "@/data/data.json";
 
 // Menu navigasi disesuaikan dengan ID section Crystal Realms kamu
 const navigationItems = [
@@ -89,11 +90,7 @@ export function LandingNavbar() {
             asChild
             className="cursor-pointer border-border/60 bg-background/50 font-semibold"
           >
-            <a
-              href="https://discord.com/invite/XEQhPc9a6p"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={Data.discord} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-1.5 h-4 w-4 text-purple-500" />
               Join Our Discord
             </a>
@@ -167,7 +164,7 @@ export function LandingNavbar() {
                   className="w-full cursor-pointer border-border/60 bg-background font-bold"
                 >
                   <a
-                    href="https://discord.com/invite/XEQhPc9a6p"
+                    href={Data.discord}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

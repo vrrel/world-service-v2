@@ -17,14 +17,13 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Mail, MessageCircle, ShieldCheck } from "lucide-react";
+import Data from "@/data/data.json";
 
 const contactFormSchema = z.object({
   firstName: z.string().min(2, {
     message: "First name must be at least 2 characters.",
   }),
-  lastName: z.string().min(2, {
-    message: "Last name must be at least 2 characters.",
-  }),
+  lastName: z.string().optional(),
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
@@ -50,30 +49,30 @@ export function ContactSection() {
 
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
     // Taruh URL Webhook Discord kamu di bawah ini
-    const DISCORD_WEBHOOK_URL = "SALIN_URL_WEBHOOK_DISCORD_KAMU_DISINI";
+    const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL_REQUEST!;
 
     // Format tampilan info pesanan rapi (Embed) untuk Discord
     const discordMessage = {
-      username: "World Service Bot",
-      avatar_url: "https://i.imgur.com/AfFp7pu.png",
-      content: "🔔 **New Service Inquiry Received!** @everyone",
+      username: "Order Bot",
+      avatar_url: "https://worldservice.vercel.app/bot/order.png",
+      // content: "🔔 **New Service Inquiry Received!**",
       embeds: [
         {
-          title: `📌 Subject: ${values.subject}`,
-          color: 10181046, // Warna ungu khas Discord
+          title: `Subject: ${values.subject}`,
+          color: 3447003,
           fields: [
             {
-              name: "👤 Client Name",
+              name: "Client Name",
               value: `${values.firstName} ${values.lastName}`,
               inline: true,
             },
             {
-              name: "✉️ Email Address",
+              name: "Email Address",
               value: values.email,
               inline: true,
             },
             {
-              name: "💬 Message Details",
+              name: "Message Details",
               value: values.message,
             },
           ],
@@ -151,7 +150,7 @@ export function ContactSection() {
                   asChild
                 >
                   <a
-                    href="https://discord.com/invite/XEQhPc9a6p"
+                    href={Data.discord}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -207,7 +206,7 @@ export function ContactSection() {
                         name="firstName"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>First Name</FormLabel>
+                            <FormLabel>First Name / In-Game Name</FormLabel>
                             <FormControl>
                               <Input placeholder="e.g., Igris" {...field} />
                             </FormControl>
@@ -220,9 +219,9 @@ export function ContactSection() {
                         name="lastName"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Last Name / In-Game Name</FormLabel>
+                            <FormLabel>Last Name</FormLabel>
                             <FormControl>
-                              <Input placeholder="e.g., CR" {...field} />
+                              <Input placeholder="e.g., Doe" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>

@@ -11,6 +11,7 @@ import {
   Music,
   ShieldAlert,
 } from "lucide-react";
+import Data from "@/data/data.json";
 
 const values = [
   {
@@ -109,11 +110,7 @@ export function AboutSection() {
               className="cursor-pointer bg-background/50 font-semibold backdrop-blur-sm"
               asChild
             >
-              <a
-                href="https://discord.com/invite/XEQhPc9a6p"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={Data.discord} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5 text-purple-500" />
                 Join Our Discord
               </a>

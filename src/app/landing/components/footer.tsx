@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/form";
 import { Logo } from "@/components/logo";
 import { Heart, MessageCircle } from "lucide-react";
+import Data from "@/data/data.json";
 
 const newsletterSchema = z.object({
   email: z.string().email({
@@ -50,22 +51,20 @@ export function LandingFooter() {
   });
 
   async function onSubmit(values: z.infer<typeof newsletterSchema>) {
-    // Taruh URL Webhook Discord kamu di bawah ini
-    const NEWSLETTER_WEBHOOK_URL = "SALIN_URL_WEBHOOK_NEWSLETTER_KAMU_DISINI";
+    const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL_NEWSLETTER!;
 
-    // Format tampilan info subscriber untuk Discord
     const discordMessage = {
-      username: "Crystal Newsletter Bot",
-      avatar_url: "https://i.imgur.com/AfFp7pu.png",
+      username: "Newsletter Bot",
+      avatar_url: "https://worldservice.vercel.app/bot/newsletter.jpg",
       content: "📰 **New Newsletter Subscriber!**",
       embeds: [
         {
-          title: "✅ New Subscription Confirmed",
-          color: 3447003, // Warna biru info khas Discord
+          title: "New Subscription Confirmed",
+          color: 5763719,
           fields: [
             {
-              name: "📧 Subscriber Email",
-              value: `\`${values.email}\``, // Menggunakan format code block agar mudah di-copy staf
+              name: "Subscriber Email",
+              value: `\`${values.email}\``,
             },
           ],
           timestamp: new Date().toISOString(),
@@ -77,7 +76,7 @@ export function LandingFooter() {
     };
 
     try {
-      const response = await fetch(NEWSLETTER_WEBHOOK_URL, {
+      const response = await fetch(DISCORD_WEBHOOK_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -172,7 +171,7 @@ export function LandingFooter() {
                 asChild
               >
                 <a
-                  href="https://discord.com/invite/XEQhPc9a6p"
+                  href={Data.discord}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

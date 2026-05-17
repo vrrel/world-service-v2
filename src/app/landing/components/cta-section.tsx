@@ -4,6 +4,7 @@ import { ArrowRight, Sparkles, MessageCircle, Swords } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import Data from "@/data/data.json";
 
 export function CTASection() {
   return (
@@ -78,7 +79,7 @@ export function CTASection() {
                   asChild
                 >
                   <a
-                    href="https://discord.com/invite/XEQhPc9a6p"
+                    href={Data.discord}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

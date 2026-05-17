@@ -1,0 +1,87 @@
+content:
+  - name: players
+    label: Players List
+    type: list
+    # Sesuaikan path di bawah ini dengan lokasi file JSON kamu di repository
+    path: data/players.json
+    exclude_index: true
+    layout: table # Menggunakan tampilan tabel di dashboard agar rapi
+    view:
+      title: name
+      description: bio
+      image: image
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+
+      - name: bio
+        label: Biography
+        type: text
+        required: false
+
+      - name: image
+        label: Player Image
+        type: image
+        # Jika gambar disimpan di folder lokal, tentukan tempat upload-nya
+        image_dir: public/player
+        public_path: /player
+        required: true
+
+      - name: role
+        label: Role
+        type: select
+        required: false
+        # Menambahkan daftar pilihan untuk dropdown
+        options:
+          - label: CC (Content Creator)
+            value: CC
+          - label: DEV (Developer)
+            value: DEV
+          - label: MOD (Moderator)
+            value: MOD
+
+      - name: admin
+        label: Admin Roles
+        type: list
+        required: false
+        field:
+          # Mengubah tipe di dalam list menjadi select agar bisa memilih banyak role
+          type: select
+          label: Role Name
+          options:
+            - Builder
+            - Composer
+            - Coordinator
+            - Hosting
+            - Admin Server
+            - Developer
+
+      - name: testimoni
+        label: Is Testimonial?
+        type: boolean
+        required: false
+        default: false
+
+      - name: ROTD
+        label: ROTD Scores
+        type: object
+        required: false
+        fields:
+          - name: special
+            label: Special
+            type: number
+            required: false
+          - name: parkour
+            label: Parkour
+            type: number
+            required: false
+          - name: story
+            label: Story
+            type: number
+            required: false
+          - name: art
+            label: Art
+            type: number
+            required: false

@@ -47,7 +47,7 @@
     "bio": "Developer",
     "image": "/player/myjob.png",
     "admin": [
-      "Admin Server"
+      "Developer"
     ]
   },
   {
@@ -70,7 +70,7 @@
     "bio": "Mod from Indonesian",
     "image": "/player/reds.png",
     "admin": [
-      "Policy"
+      "Police"
     ],
     "testimoni": true
   },
@@ -80,7 +80,7 @@
     "bio": "Mod from Indonesian",
     "image": "/player/regas.png",
     "admin": [
-      "Policy"
+      "Police"
     ],
     "testimoni": true
   },
@@ -90,7 +90,7 @@
     "bio": "Mod from Turkish",
     "image": "/player/texhnolyzed.png",
     "admin": [
-      "Policy"
+      "Police"
     ],
     "testimoni": true
   },
@@ -116,6 +116,12 @@
     "name": "STREAMER",
     "bio": "Rich player from Indonesian",
     "image": "/player/streamer.png",
+    "testimoni": true
+  },
+  {
+    "name": "ROTI",
+    "bio": "Rich player from Indonesian",
+    "image": "/player/roti.png",
     "testimoni": true
   }
 ]

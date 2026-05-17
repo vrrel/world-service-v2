@@ -8,34 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import { DotPattern } from "@/components/dot-pattern";
 import useEmblaCarousel from "embla-carousel-react";
 
-// Data dummy portofolio hasil bangunan Crystal Realms
-const showcases = [
-  {
-    id: 1,
-    src: "/main.webp",
-    label: "World ID: beats99",
-  },
-  {
-    id: 2,
-    src: "/proof.webp",
-    label: "World ID: beats99",
-  },
-  {
-    id: 3,
-    src: "/proof2.webp",
-    label: "World ID: beats99",
-  },
-  {
-    id: 4,
-    src: "/proof3.webp",
-    label: "World ID: beats99",
-  },
-  {
-    id: 5,
-    src: "/proof4.webp",
-    label: "World ID: beats99",
-  },
-];
+import Data from "@/data/data.json";
+import Showcases from "@/data/showcases.json";
 
 export function HeroSection() {
   // Plugin untuk menggerakkan carousel secara otomatis
@@ -71,7 +45,7 @@ export function HeroSection() {
               className="flex items-center gap-2 border-purple-500/30 bg-purple-500/5 px-4 py-1.5 text-xs font-semibold backdrop-blur-sm"
             >
               <Sparkles className="h-3.5 w-3.5 text-purple-500" />
-              The Sovereign Guild of Builders & Composers
+              The Sovereign Service Guild
             </Badge>
           </div>
 
@@ -116,11 +90,7 @@ export function HeroSection() {
               className="cursor-pointer bg-background/50 text-base font-semibold backdrop-blur-sm"
               asChild
             >
-              <a
-                href="https://discord.com/invite/XEQhPc9a6p"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={Data.discord} target="_blank" rel="noopener noreferrer">
                 <Users className="mr-2 h-4 w-4 text-purple-500" />
                 Join Our Staff
               </a>
@@ -135,9 +105,9 @@ export function HeroSection() {
 
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex w-full cursor-grab items-center active:cursor-grabbing">
-              {showcases.map((showcase) => (
+              {Showcases.map((showcase, index) => (
                 <div
-                  key={`hero-${showcase.id}`}
+                  key={`hero-${showcase.src}`}
                   className="group w-full max-w-xs flex-shrink-0 pr-6 md:max-w-md"
                 >
                   <div className="w-full overflow-hidden rounded-2xl border border-border/60 bg-card">
@@ -148,7 +118,7 @@ export function HeroSection() {
                         width={1280}
                         height={720}
                         className="aspect-[16/9] w-full rounded-2xl object-cover transition-transform group-hover:scale-105 group-active:scale-105"
-                        priority={showcase.id === 1}
+                        priority={index === 1}
                       />
 
                       {/* Gradient Ambient Masking bottom */}
