@@ -156,7 +156,7 @@ export function LandingFooter() {
               >
                 <Logo size={32} />
                 <span className="text-xl font-bold tracking-tight">
-                  Crystal Service
+                  World Service
                 </span>
               </a>
             </div>
@@ -255,7 +255,7 @@ export function LandingFooter() {
             </div>
             <span className="hidden sm:inline">•</span>
             <span>
-              © {new Date().getFullYear()} Crystal Service. All rights reserved.
+              © {new Date().getFullYear()} World Service. All rights reserved.
             </span>
           </div>
           <div className="flex items-center space-x-6">

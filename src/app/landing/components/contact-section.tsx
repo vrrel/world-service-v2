@@ -54,7 +54,7 @@ export function ContactSection() {
 
     // Format tampilan info pesanan rapi (Embed) untuk Discord
     const discordMessage = {
-      username: "Crystal Service Bot",
+      username: "World Service Bot",
       avatar_url: "https://i.imgur.com/AfFp7pu.png",
       content: "🔔 **New Service Inquiry Received!** @everyone",
       embeds: [

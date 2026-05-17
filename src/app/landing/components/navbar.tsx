@@ -54,7 +54,7 @@ export function LandingNavbar() {
           >
             <Logo size={32} />
             <span className="text-sm font-bold tracking-tight sm:text-base">
-              Crystal Service
+              World Service
             </span>
           </Link>
         </div>
@@ -120,7 +120,7 @@ export function LandingNavbar() {
                     <Logo size={18} />
                   </div>
                   <SheetTitle className="text-base font-bold">
-                    Crystal Service
+                    World Service
                   </SheetTitle>
                   <div className="ml-auto flex items-center gap-2">
                     <Button

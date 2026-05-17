@@ -1,17 +1,12 @@
 "use client";
 
-import * as React from "react";
 import Image from "next/image";
 import AutoplayPlugin from "embla-carousel-autoplay";
 import { Users, ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { DotPattern } from "@/components/dot-pattern";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
+import useEmblaCarousel from "embla-carousel-react";
 
 // Data dummy portofolio hasil bangunan Crystal Realms
 const showcases = [
@@ -44,8 +39,13 @@ const showcases = [
 
 export function HeroSection() {
   // Plugin untuk menggerakkan carousel secara otomatis
-  const plugin = React.useRef(
-    AutoplayPlugin({ delay: 4000, stopOnInteraction: false }),
+  const [emblaRef] = useEmblaCarousel(
+    {
+      loop: true,
+      dragFree: false,
+      align: "start",
+    },
+    [AutoplayPlugin({ delay: 3000, stopOnInteraction: false })],
   );
 
   return (
@@ -77,7 +77,7 @@ export function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="mb-6 text-4xl leading-none font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl">
-            #1 Elite{" "}
+            #1 Best{" "}
             <span className="bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent dark:from-purple-400 dark:to-indigo-400">
               Crystal
             </span>{" "}
@@ -129,31 +129,25 @@ export function HeroSection() {
         </div>
 
         {/* Showcase Carousel Visual (Embla with Scale and Auto Scroll) */}
-        <div className="relative mx-auto mt-16 max-w-5xl px-4">
+        <div className="relative mx-auto mt-16 max-w-5xl">
           {/* Background Glow Premium Overlay */}
-          <div className="pointer-events-none absolute -top-12 left-1/2 z-0 h-40 w-[85%] -translate-x-1/2 transform rounded-full bg-purple-500/20 blur-3xl dark:bg-purple-500/30"></div>
+          <div className="pointer-events-none absolute -top-5 left-1/2 z-0 h-40 w-full -translate-x-1/2 transform rounded-full bg-primary/20 blur-3xl"></div>
 
-          <Carousel
-            plugins={[plugin.current]}
-            opts={{
-              align: "center",
-              loop: true,
-            }}
-            className="relative z-10 w-full cursor-grab active:cursor-grabbing"
-          >
-            <CarouselContent className="-ml-4 flex items-center">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex w-full cursor-grab items-center active:cursor-grabbing">
               {showcases.map((showcase) => (
-                <CarouselItem
-                  key={showcase.id}
-                  className="basis-full pl-4 transition-all duration-500 ease-in-out sm:basis-[85%] md:basis-[75%] [[data-active=false]_&]:scale-90 [[data-active=false]_&]:opacity-50"
+                <div
+                  key={`hero-${showcase.id}`}
+                  className="group w-full max-w-xs flex-shrink-0 pr-6 md:max-w-md"
                 >
-                  <div className="group/item relative overflow-hidden rounded-2xl border border-border/60 bg-card shadow-2xl dark:shadow-none">
-                    <div className="relative aspect-[16/9] w-full">
+                  <div className="w-full overflow-hidden rounded-2xl border border-border/60 bg-card">
+                    <div className="relative w-full">
                       <Image
                         src={showcase.src}
                         alt={showcase.label}
-                        fill
-                        className="object-cover transition-transform duration-700 group-hover/item:scale-105"
+                        width={1280}
+                        height={720}
+                        className="aspect-[16/9] w-full rounded-2xl object-cover transition-transform group-hover:scale-105 group-active:scale-105"
                         priority={showcase.id === 1}
                       />
 
@@ -169,10 +163,10 @@ export function HeroSection() {
                       </div>
                     </div>
                   </div>
-                </CarouselItem>
+                </div>
               ))}
-            </CarouselContent>
-          </Carousel>
+            </div>
+          </div>
         </div>
       </div>
     </section>

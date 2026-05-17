@@ -15,7 +15,7 @@ import {
 const values = [
   {
     icon: Hammer,
-    title: "Elite Architecture",
+    title: "Great Architecture",
     description:
       "Every world and island structure is meticulously handcrafted by experienced in-game builders, ensuring jaw-dropping aesthetics.",
   },
@@ -23,7 +23,7 @@ const values = [
     icon: Music,
     title: "Acoustic Perfection",
     description:
-      "Our note block arrangements use precise redstone delays to deliver continuous, non-overlapping loop tracks tailored for your server.",
+      "Our note block arrangements use precise delays to deliver continuous, non-overlapping loop tracks tailored for your server.",
   },
   {
     icon: ShieldAlert,
@@ -33,9 +33,9 @@ const values = [
   },
   {
     icon: Swords,
-    title: "Built For High Rank",
+    title: "Built For High Quality",
     description:
-      "Designed specifically to boost your world reputation, attract heavy trading traffic, and dominate the Realm of the Day nominations.",
+      "Designed specifically to boost your world reputation, attract heavy traffic, and dominate the Realm of the Day nominations.",
   },
 ];
 
@@ -46,16 +46,15 @@ export function AboutSection() {
         {/* Section Header */}
         <div className="mx-auto mb-16 max-w-4xl text-center">
           <Badge variant="outline" className="mb-4">
-            About Crystal Service
+            About World Service
           </Badge>
           <h2 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
-            Built by active players, for elite players
+            Built by players, for players
           </h2>
           <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            We are passionate veterans of Crystal Realms. Our mission is to
-            eliminate the tedious grinding process and accelerate your
-            progression by delivering world-class designs and flawless custom
-            audio systems.
+            We are passionate veterans from Crystal Realms. Our mission is to
+            eliminate grinding and speed up your progress by providing services
+            in various fields.
           </p>
         </div>
 

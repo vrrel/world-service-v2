@@ -1,0 +1,121 @@
+[
+  {
+    "name": "IGRIS",
+    "role": "CC",
+    "bio": "Owner World Service & Builder",
+    "image": "/player/igris.png",
+    "admin": [
+      "Owner",
+      "Builder"
+    ],
+    "ROTD": {
+      "special": 1,
+      "parkour": 1,
+      "story": 1,
+      "art": 1
+    }
+  },
+  {
+    "name": "WhyNotJustDied",
+    "role": "",
+    "bio": "Builder",
+    "image": "/player/whynotjustdied.png",
+    "admin": [
+      "Builder"
+    ],
+    "ROTD": {
+      "special": 5,
+      "story": 2,
+      "art": 6
+    }
+  },
+  {
+    "name": "Wony",
+    "role": "",
+    "bio": "Composer",
+    "image": "/player/wony.png",
+    "admin": [
+      "Composer"
+    ],
+    "ROTD": {
+      "special": 5
+    }
+  },
+  {
+    "name": "MyJob",
+    "role": "",
+    "bio": "Developer",
+    "image": "/player/myjob.png",
+    "admin": [
+      "Admin Server"
+    ]
+  },
+  {
+    "name": "PIEMEN",
+    "role": "DEV",
+    "bio": "Developer Crystal Realms",
+    "image": "/player/piemen.png",
+    "testimoni": true
+  },
+  {
+    "name": "Anubis",
+    "role": "DEV",
+    "bio": "Developer Crystal Realms",
+    "image": "/player/anubis.png",
+    "testimoni": true
+  },
+  {
+    "name": "Reds",
+    "role": "MOD",
+    "bio": "Mod from Indonesian",
+    "image": "/player/reds.png",
+    "admin": [
+      "Policy"
+    ],
+    "testimoni": true
+  },
+  {
+    "name": "Regas",
+    "role": "MOD",
+    "bio": "Mod from Indonesian",
+    "image": "/player/regas.png",
+    "admin": [
+      "Policy"
+    ],
+    "testimoni": true
+  },
+  {
+    "name": "Texhnolyzed",
+    "role": "MOD",
+    "bio": "Mod from Turkish",
+    "image": "/player/texhnolyzed.png",
+    "admin": [
+      "Policy"
+    ],
+    "testimoni": true
+  },
+  {
+    "name": "NARAKA",
+    "bio": "Rich player from Indonesian",
+    "image": "/player/naraka.png",
+    "testimoni": true
+  },
+  {
+    "name": "Cliipad",
+    "bio": "Rich player from Indonesian",
+    "image": "/player/cliipad.png",
+    "testimoni": true
+  },
+  {
+    "name": "Broz",
+    "bio": "Rich player from Indonesian",
+    "image": "/player/broz.png",
+    "testimoni": true
+  },
+  {
+    "name": "STREAMER",
+    "bio": "Rich player from Indonesian",
+    "image": "/player/streamer.png",
+    "testimoni": true
+  }
+]
