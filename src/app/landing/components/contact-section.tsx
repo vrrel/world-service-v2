@@ -48,49 +48,14 @@ export function ContactSection() {
   });
 
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
-    // Taruh URL Webhook Discord kamu di bawah ini
-    const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL_REQUEST!;
-
-    // Format tampilan info pesanan rapi (Embed) untuk Discord
-    const discordMessage = {
-      username: "Order Bot",
-      avatar_url: "https://worldservice.vercel.app/bot/order.png",
-      // content: "🔔 **New Service Inquiry Received!**",
-      embeds: [
-        {
-          title: `Subject: ${values.subject}`,
-          color: 3447003,
-          fields: [
-            {
-              name: "Client Name",
-              value: `${values.firstName} ${values.lastName}`,
-              inline: true,
-            },
-            {
-              name: "Email Address",
-              value: values.email,
-              inline: true,
-            },
-            {
-              name: "Message Details",
-              value: values.message,
-            },
-          ],
-          timestamp: new Date().toISOString(),
-          footer: {
-            text: "Crystal Realms Service Department",
-          },
-        },
-      ],
-    };
-
     try {
-      const response = await fetch(DISCORD_WEBHOOK_URL, {
+      // ✅ Panggil API Route, bukan langsung ke Discord
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(discordMessage),
+        body: JSON.stringify(values),
       });
 
       if (response.ok) {

@@ -51,37 +51,14 @@ export function LandingFooter() {
   });
 
   async function onSubmit(values: z.infer<typeof newsletterSchema>) {
-    const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL_NEWSLETTER!;
-
-    const discordMessage = {
-      username: "Newsletter Bot",
-      avatar_url: "https://worldservice.vercel.app/bot/newsletter.jpg",
-      content: "📰 **New Newsletter Subscriber!**",
-      embeds: [
-        {
-          title: "New Subscription Confirmed",
-          color: 5763719,
-          fields: [
-            {
-              name: "Subscriber Email",
-              value: `\`${values.email}\``,
-            },
-          ],
-          timestamp: new Date().toISOString(),
-          footer: {
-            text: "Crystal Realms Lead Generation",
-          },
-        },
-      ],
-    };
-
     try {
-      const response = await fetch(DISCORD_WEBHOOK_URL, {
+      // ✅ Panggil API Route
+      const response = await fetch("/api/newsletter", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(discordMessage),
+        body: JSON.stringify(values),
       });
 
       if (response.ok) {
