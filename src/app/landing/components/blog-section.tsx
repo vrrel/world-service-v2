@@ -15,7 +15,7 @@ import {
 const blogs = [
   {
     id: 1,
-    image: "https://ui.shadcn.com/placeholder.svg",
+    image: "/proof2.webp",
     category: "Economy",
     title: "How I Earned 60K+ RT in Just 1 Month",
     description:
@@ -23,7 +23,7 @@ const blogs = [
   },
   {
     id: 2,
-    image: "https://ui.shadcn.com/placeholder.svg",
+    image: "/proof3.webp",
     category: "Investment",
     title: "Naraka's Guide: Preparing for the Next Big Event",
     description:
@@ -31,7 +31,7 @@ const blogs = [
   },
   {
     id: 3,
-    image: "https://ui.shadcn.com/placeholder.svg",
+    image: "/proof4.webp",
     category: "Realm Design",
     title: "ROTD Blueprint: The Anatomy of Winning Worlds",
     description:
@@ -39,7 +39,7 @@ const blogs = [
   },
   {
     id: 4,
-    image: "https://ui.shadcn.com/placeholder.svg",
+    image: "/proof5.webp",
     category: "Audio",
     title: "Note Block Secrets: Perfecting Seamless Music Loops",
     description:
@@ -82,15 +82,13 @@ export function BlogSection() {
             className="relative w-full"
           >
             {/* Mengunci container flex utama agar overflow horizontal aman */}
-            <CarouselContent className="-ml-4 flex">
+            <CarouselContent className="flex">
               {blogs.map((blog) => (
                 <CarouselItem
                   key={blog.id}
-                  // w-[300px] sm:w-[320px] -> Lebar dikunci konstan di desktop & mobile
-                  // shrink-0 -> Mencegah flexbox menciutkan ukuran komponen card
-                  className="w-[300px] shrink-0 basis-auto pl-4 sm:w-[320px]"
+                  className="w-full max-w-80 shrink-0"
                 >
-                  <Card className="flex h-[420px] flex-col overflow-hidden border border-border/60 bg-background/50 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-purple-500/30">
+                  <Card className="flex h-[420px] w-full overflow-hidden border border-border/60 bg-background/50 pt-0 transition-colors hover:border-purple-400/30 active:border-purple-400/30">
                     <CardContent className="flex h-full flex-col p-0">
                       {/* Image Container */}
                       <div className="relative aspect-video w-full overflow-hidden bg-muted">
@@ -98,7 +96,7 @@ export function BlogSection() {
                           src={blog.image}
                           alt={blog.title}
                           fill
-                          className="object-cover transition-transform duration-500 hover:scale-105"
+                          className="object-cover transition-transform duration-500 hover:scale-105 active:scale-105"
                           loading="lazy"
                         />
                       </div>
@@ -114,7 +112,7 @@ export function BlogSection() {
                             onClick={(e) => e.preventDefault()}
                             className="block cursor-pointer"
                           >
-                            <h3 className="line-clamp-2 text-base leading-snug font-bold text-foreground transition-colors hover:text-purple-500">
+                            <h3 className="line-clamp-2 text-base leading-snug font-bold text-foreground transition-colors hover:text-purple-400 active:text-purple-400">
                               {blog.title}
                             </h3>
                           </a>
@@ -127,10 +125,10 @@ export function BlogSection() {
                           <a
                             href="#"
                             onClick={(e) => e.preventDefault()}
-                            className="group inline-flex cursor-pointer items-center gap-1.5 text-xs font-bold text-foreground transition-colors hover:text-purple-500"
+                            className="group inline-flex cursor-pointer items-center gap-1.5 text-xs font-bold text-foreground transition-colors hover:text-purple-400 active:text-purple-400"
                           >
                             Read Article
-                            <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
+                            <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1 group-active:translate-x-1" />
                           </a>
                         </div>
                       </div>

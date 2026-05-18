@@ -71,7 +71,7 @@ export function LogoCarousel() {
                                 <PlayerRole
                                   name={player.name}
                                   role={player.role}
-                                />{" "}
+                                />
                               </span>
                               <span className="text-sm font-semibold whitespace-nowrap text-muted-foreground">
                                 {player.bio}
