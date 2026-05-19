@@ -115,6 +115,11 @@ content:
         label: Tags
         type: select # Diperbaiki: Agar UI di CMS menjadi input tag/chip yang rapi
         options:
+         values:
+           - { label: "Investment", value: "Investment" }
+           - { label: "Guide", value: "Guide" }
+           - { label: "Tips", value: "Tips" }
+           - { label: "Crystal Realms", value: "Crystal Realms" }
           creatable: true
           multiple: true
       - name: draft
