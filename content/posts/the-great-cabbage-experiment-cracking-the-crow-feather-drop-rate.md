@@ -8,6 +8,7 @@ excerpt: "Can 6,000 cabbages summon a flock of crows? This experiment tests the
 date: 2026-05-15
 updated: 2026-05-15
 author: IGRIS
+image: /blog/igris/how-rare-are-crow-feathers.jpg
 urlYoutube: https://youtu.be/fLeikwC2dg4?si=C4anKLrB_oS-KG4_
 tags:
   - Guide
