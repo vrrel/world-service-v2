@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import remarkGfm from "remark-gfm";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
@@ -10,7 +11,7 @@ export interface PostData {
   slug: string;
   title: string;
   description: string;
-  date: string;
+  date: string; // Di sini tipenya string, jadi datanya wajib string!
   updated: string;
   author: string;
   image: string;
@@ -18,6 +19,15 @@ export interface PostData {
   tags: string[];
   draft: boolean;
   contentHtml?: string;
+}
+
+// Fungsi helper untuk memastikan tanggal selalu bertipe string
+function formatDate(date: any): string {
+  if (date instanceof Date) {
+    // Mengubah objek Date menjadi string "YYYY-MM-DD"
+    return date.toISOString().split("T")[0];
+  }
+  return date ? String(date) : "";
 }
 
 export function getSortedPostsData(): PostData[] {
@@ -33,14 +43,16 @@ export function getSortedPostsData(): PostData[] {
       const matterResult = matter(fileContents);
 
       return {
+        ...matterResult.data, // Posisikan spread di atas agar tidak menimpa properti kustom di bawah
         slug,
         title: matterResult.data.title,
-        description: matterResult.data.excerpt,
-        date: matterResult.data.date,
+        description: matterResult.data.excerpt || matterResult.data.description,
+        // KUNCI PERBAIKAN: Paksa menjadi string
+        date: formatDate(matterResult.data.date),
+        updated: formatDate(matterResult.data.updated),
         image: matterResult.data.image,
-        tags: matterResult.data.tags,
+        tags: matterResult.data.tags || [],
         draft: matterResult.data.draft ?? false,
-        ...matterResult.data,
       } as PostData;
     })
     .filter((post) => post.draft === false);
@@ -62,22 +74,24 @@ export async function getPostData(slug: string): Promise<PostData | null> {
 
   // Proses markdown menjadi string HTML
   const processedContent = await remark()
+    .use(remarkGfm)
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
   return {
+    ...matterResult.data, // Posisikan spread di atas
     slug,
     title: matterResult.data.title,
-    description: matterResult.data.excerpt,
-    date: matterResult.data.date,
-    updated: matterResult.data.updated,
+    description: matterResult.data.excerpt || matterResult.data.description,
+    // KUNCI PERBAIKAN: Paksa menjadi string
+    date: formatDate(matterResult.data.date),
+    updated: formatDate(matterResult.data.updated),
     author: matterResult.data.author,
     image: matterResult.data.image,
-    urlYoutube: matterResult.data.youtube,
-    tags: matterResult.data.tags,
+    urlYoutube: matterResult.data.urlYoutube,
+    tags: matterResult.data.tags || [],
     draft: matterResult.data.draft ?? false,
     contentHtml,
-    ...matterResult.data,
-  };
+  } as PostData;
 }

@@ -1,4 +1,3 @@
-// src/app/landing/components/blog-section-client.tsx
 "use client";
 
 import Image from "next/image";

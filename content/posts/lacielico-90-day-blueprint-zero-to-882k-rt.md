@@ -8,7 +8,7 @@ excerpt: Lacielico turned zero into 882K Realm Tokens in just 90 days. No
 date: 2026-05-19
 updated: 2026-05-19
 author: MyJob
-image: /blog/lacielico/image - Edited.png
+image: /blog/lacielico/image.png
 tags:
   - Investment
   - Tips
