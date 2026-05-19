@@ -4,13 +4,14 @@
       "name": "IGRIS",
       "role": "CC",
       "bio": "Owner World Service & Builder",
-      "image": "/player/igris.png",
+      "image": "/set (12).png",
       "admin": [
         "Owner",
         "Builder"
       ],
+      "testimoni": false,
       "ROTD": {
-        "special": 1,
+        "special": 4,
         "parkour": 1,
         "story": 1,
         "art": 1
@@ -18,12 +19,12 @@
     },
     {
       "name": "WhyNotJustDied",
-      "role": "",
       "bio": "Builder",
       "image": "/player/whynotjustdied.png",
       "admin": [
         "Builder"
       ],
+      "testimoni": false,
       "ROTD": {
         "special": 5,
         "story": 2,
@@ -32,24 +33,24 @@
     },
     {
       "name": "Wony",
-      "role": "",
       "bio": "Composer",
       "image": "/player/wony.png",
       "admin": [
         "Composer"
       ],
+      "testimoni": false,
       "ROTD": {
         "special": 5
       }
     },
     {
       "name": "MyJob",
-      "role": "",
       "bio": "Developer World Service",
       "image": "/player/myjob.png",
       "admin": [
         "Developer"
       ],
+      "testimoni": false,
       "quote": "Before becoming a Server Admin here, I worked as an Admin Harvester, and that role allowed me, as a newbie, to earn around 2K RT – 6K RT per day. Thank you, World Service!"
     },
     {
@@ -159,12 +160,14 @@
       "name": "Daanz",
       "bio": "Lost a lot? Good. That's how you learn",
       "image": "/player/daanz.png",
+      "testimoni": false,
       "quote": "Professional harvest service from start to finish. They communicated clearly, showed proof of results, and didn't miss a single seed. Highly recommended."
     },
     {
       "name": "Arzachel",
       "bio": "Noob? Yes. Stupid? No",
       "image": "/player/arzachel.png",
+      "testimoni": false,
       "quote": "I used their harvest service AND builder service. Harvest was fast and clean. Builder made my world look amazing. Two services, zero disappointment."
     }
   ]
