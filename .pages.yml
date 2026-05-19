@@ -3,9 +3,6 @@ media:
   output: /
 
 content:
-  # ==========================================
-  # KONFIGURASI PLAYERS (JSON)
-  # ==========================================
   - name: players
     label: Players List
     type: list
@@ -98,15 +95,12 @@ content:
             type: number
             required: false
 
-  # ==========================================
-  # KONFIGURASI SHOWCASES (JSON)
-  # ==========================================
   - name: showcases
     label: Showcases Gallery
     type: list
     path: src/data/showcases.json
     exclude_index: true
-    layout: grid # Menggunakan grid agar gambar lebih jelas terlihat di dashboard
+    layout: grid
     view:
       title: label
       image: src
@@ -119,14 +113,10 @@ content:
       - name: src
         label: Showcase Image
         type: image
-        # Menentukan folder tempat upload gambar showcase baru
         image_dir: public/showcase
         public_path: /showcase
         required: true
 
-  # ==========================================
-  # KONFIGURASI BLOG POSTS (MARKDOWN)
-  # ==========================================
   - name: posts
     label: Blog Posts
     type: collection
