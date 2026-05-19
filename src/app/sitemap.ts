@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getSortedPostsData } from "@/lib/blog";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://http://localhost:3000";
+  const baseUrl = "https://worldservice.vercel.app";
 
   // 1. Ambil semua artikel blog dari folder content/posts
   const posts = getSortedPostsData();
