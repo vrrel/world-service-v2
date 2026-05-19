@@ -3,6 +3,9 @@ media:
   output: /
 
 content:
+  # ==========================================
+  # KONFIGURASI PLAYERS (JSON)
+  # ==========================================
   - name: players
     label: Players List
     type: list
@@ -30,8 +33,6 @@ content:
             value: DEV
           - label: MOD (Moderator)
             value: MOD
-          - label: None / Player
-            value: ""
 
       - name: bio
         label: Biography
@@ -53,14 +54,22 @@ content:
           type: select
           label: Role Name
           options:
-            - Owner
-            - Builder
-            - Composer
-            - Coordinator
-            - Developer
-            - Hosting
-            - Police
-            - Server Admin
+            - label: Owner
+              value: Owner
+            - label: Builder
+              value: Builder
+            - label: Composer
+              value: Composer
+            - label: Coordinator
+              value: Coordinator
+            - label: Developer
+              value: Developer
+            - label: Hosting
+              value: Hosting
+            - label: Police
+              value: Police
+            - label: Server Admin
+              value: Server Admin
 
       - name: testimoni
         label: Is Testimonial?
@@ -95,6 +104,9 @@ content:
             type: number
             required: false
 
+  # ==========================================
+  # KONFIGURASI SHOWCASES (JSON)
+  # ==========================================
   - name: showcases
     label: Showcases Gallery
     type: list
@@ -117,6 +129,9 @@ content:
         public_path: /showcase
         required: true
 
+  # ==========================================
+  # KONFIGURASI BLOG POSTS (MARKDOWN)
+  # ==========================================
   - name: posts
     label: Blog Posts
     type: collection
