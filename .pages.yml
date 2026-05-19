@@ -115,11 +115,9 @@ content:
         label: Tags
         type: select # Diperbaiki: Agar UI di CMS menjadi input tag/chip yang rapi
         options:
-         values:
           creatable: true
           multiple: true
-              multiple: true
-              values: [Investment, Tips, Guide, Crystal Realms, Builder, Composer]
+          values: [Investment, Tips, Guide, Crystal Realms, Builder, Composer]
       - name: draft
         label: Status Draft
         type: boolean
