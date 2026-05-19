@@ -42,7 +42,7 @@ export function LogoCarousel() {
             {/* Embla Viewport */}
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex items-center">
-                {Players.map(
+                {Players.data.map(
                   (player, index) =>
                     player.testimoni && (
                       <div

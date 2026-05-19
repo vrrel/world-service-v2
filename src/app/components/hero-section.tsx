@@ -105,7 +105,7 @@ export function HeroSection() {
 
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex w-full cursor-grab items-center active:cursor-grabbing">
-              {Showcases.map((showcase, index) => (
+              {Showcases.data.map((showcase, index) => (
                 <div
                   key={`hero-${showcase.src}`}
                   className="group w-full max-w-xs flex-shrink-0 pr-6 md:max-w-md"

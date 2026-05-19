@@ -85,7 +85,7 @@ export function TestimonialsSection() {
 
         {/* Testimonials Masonry Grid */}
         <div className="columns-1 gap-4 md:columns-2 lg:columns-3">
-          {Players.map(
+          {Players.data.map(
             (player, index) =>
               player.quote && (
                 <Card

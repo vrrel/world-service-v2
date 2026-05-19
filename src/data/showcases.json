@@ -1,46 +1,48 @@
-[
-  {
-    "src": "/showcase/0sa8g8nk.png",
-    "label": "World ID: 0sa8g8nk"
-  },
-  {
-    "src": "/showcase/7c6s3oyi.png",
-    "label": "World ID: 7c6s3oyi"
-  },
-  {
-    "src": "/showcase/48vj29we.png",
-    "label": "World ID: 48vj29we"
-  },
-  {
-    "src": "/showcase/iiknbuxo.png",
-    "label": "World ID: iiknbuxo"
-  },
-  {
-    "src": "/showcase/a2qo8lgc.png",
-    "label": "World ID: a2qo8lgc"
-  },
-  {
-    "src": "/showcase/ronifkka.png",
-    "label": "World ID: ronifkka"
-  },
-  {
-    "src": "/showcase/fq305rhb.png",
-    "label": "World ID: fq305rhb"
-  },
-  {
-    "src": "/showcase/sysssyw4.png",
-    "label": "World ID: sysssyw4"
-  },
-  {
-    "src": "/showcase/o0pfqld6.png",
-    "label": "World ID: o0pfqld6"
-  },
-  {
-    "src": "/showcase/kerynudu.png",
-    "label": "World ID: kerynudu"
-  },
-  {
-    "src": "/showcase/c51x6fcv.png",
-    "label": "World ID: c51x6fcv"
-  }
-]
+{
+  "data": [
+    {
+      "src": "/showcase/0sa8g8nk.png",
+      "label": "World ID: 0sa8g8nk"
+    },
+    {
+      "src": "/showcase/7c6s3oyi.png",
+      "label": "World ID: 7c6s3oyi"
+    },
+    {
+      "src": "/showcase/48vj29we.png",
+      "label": "World ID: 48vj29we"
+    },
+    {
+      "src": "/showcase/iiknbuxo.png",
+      "label": "World ID: iiknbuxo"
+    },
+    {
+      "src": "/showcase/a2qo8lgc.png",
+      "label": "World ID: a2qo8lgc"
+    },
+    {
+      "src": "/showcase/ronifkka.png",
+      "label": "World ID: ronifkka"
+    },
+    {
+      "src": "/showcase/fq305rhb.png",
+      "label": "World ID: fq305rhb"
+    },
+    {
+      "src": "/showcase/sysssyw4.png",
+      "label": "World ID: sysssyw4"
+    },
+    {
+      "src": "/showcase/o0pfqld6.png",
+      "label": "World ID: o0pfqld6"
+    },
+    {
+      "src": "/showcase/kerynudu.png",
+      "label": "World ID: kerynudu"
+    },
+    {
+      "src": "/showcase/c51x6fcv.png",
+      "label": "World ID: c51x6fcv"
+    }
+  ]
+}

@@ -91,7 +91,7 @@ export function StatsSection() {
           ref={mainTeamRef}
         >
           <div className="flex gap-4">
-            {Players.map(
+            {Players.data.map(
               (player, index) =>
                 player.admin && (
                   <div

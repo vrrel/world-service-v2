@@ -1,169 +1,171 @@
-[
-  {
-    "name": "IGRIS",
-    "role": "CC",
-    "bio": "Owner World Service & Builder",
-    "image": "/player/igris.png",
-    "admin": [
-      "Owner",
-      "Builder"
-    ],
-    "ROTD": {
-      "special": 1,
-      "parkour": 1,
-      "story": 1,
-      "art": 1
+{
+  "data": [
+    {
+      "name": "IGRIS",
+      "role": "CC",
+      "bio": "Owner World Service & Builder",
+      "image": "/player/igris.png",
+      "admin": [
+        "Owner",
+        "Builder"
+      ],
+      "ROTD": {
+        "special": 1,
+        "parkour": 1,
+        "story": 1,
+        "art": 1
+      }
+    },
+    {
+      "name": "WhyNotJustDied",
+      "role": "",
+      "bio": "Builder",
+      "image": "/player/whynotjustdied.png",
+      "admin": [
+        "Builder"
+      ],
+      "ROTD": {
+        "special": 5,
+        "story": 2,
+        "art": 6
+      }
+    },
+    {
+      "name": "Wony",
+      "role": "",
+      "bio": "Composer",
+      "image": "/player/wony.png",
+      "admin": [
+        "Composer"
+      ],
+      "ROTD": {
+        "special": 5
+      }
+    },
+    {
+      "name": "MyJob",
+      "role": "",
+      "bio": "Developer World Service",
+      "image": "/player/myjob.png",
+      "admin": [
+        "Developer"
+      ],
+      "quote": "Before becoming a Server Admin here, I worked as an Admin Harvester, and that role allowed me, as a newbie, to earn around 2K RT – 6K RT per day. Thank you, World Service!"
+    },
+    {
+      "name": "PIEMEN",
+      "role": "DEV",
+      "bio": "Developer Crystal Realms",
+      "image": "/player/piemen.png",
+      "testimoni": true
+    },
+    {
+      "name": "Anubis",
+      "role": "DEV",
+      "bio": "Developer Crystal Realms",
+      "image": "/player/anubis.png",
+      "testimoni": true
+    },
+    {
+      "name": "Reds",
+      "role": "MOD",
+      "bio": "Red is better than blue",
+      "image": "/player/reds.png",
+      "admin": [
+        "Police"
+      ],
+      "testimoni": true
+    },
+    {
+      "name": "Regas",
+      "role": "MOD",
+      "bio": "Designer by choice, farmer by force",
+      "image": "/player/regas.png",
+      "admin": [
+        "Police"
+      ],
+      "testimoni": true
+    },
+    {
+      "name": "Texhnolyzed",
+      "role": "MOD",
+      "bio": "Blue is better than red",
+      "image": "/player/texhnolyzed.png",
+      "admin": [
+        "Police"
+      ],
+      "testimoni": true
+    },
+    {
+      "name": "NARAKA",
+      "bio": "I trade so much, my fingers hurt",
+      "image": "/player/naraka.png",
+      "testimoni": true
+    },
+    {
+      "name": "Cliipad",
+      "bio": "Rich, quiet, focused",
+      "image": "/player/cliipad.png",
+      "testimoni": true
+    },
+    {
+      "name": "Broz",
+      "bio": "Wealthy player from Indonesia",
+      "image": "/player/broz.png",
+      "testimoni": true
+    },
+    {
+      "name": "STREAMER",
+      "bio": "Wealthy but still grinding",
+      "image": "/player/streamer.png",
+      "testimoni": true
+    },
+    {
+      "name": "Lacielico",
+      "bio": "Fast growing player from Indonesia",
+      "image": "/player/lacielico.png",
+      "testimoni": true,
+      "quote": "Following their market insights and event guides saved my realms token. I flipped rare items just before prices skyrocketed, and I made 150K RT. Thank you!"
+    },
+    {
+      "name": "ROTI",
+      "bio": "Not a billionaire... yet",
+      "image": "/player/roti.png",
+      "testimoni": true,
+      "quote": "Golden Hour music service delivered beyond my expectations. The audio was crystal clear, perfectly synced, and added a professional touch to my world. Highly recommended for anyone who wants a memorable atmosphere."
+    },
+    {
+      "name": "BTAX",
+      "bio": "Market rat since day one",
+      "image": "/player/btax.png",
+      "testimoni": true,
+      "quote": "I am needed a massive spawn castle for our community hub in under a week. Not only did they finish it early, but they also provided daily screenshot updates throughout the entire process."
+    },
+    {
+      "name": "GodSpeed",
+      "bio": "I am the fastest",
+      "image": "/player/godspeed.png",
+      "testimoni": true,
+      "quote": "I can't build to save my life. This builder took my messy idea and turned it into something beautiful. My friends keep asking who made it."
+    },
+    {
+      "name": "Loyal",
+      "bio": "DM me for price. Lowballers = ignored",
+      "image": "/player/loyal.png",
+      "testimoni": true,
+      "quote": "Hired them for harvest. They came on time, worked fast, and sent me a screenshot of the items collected. No scams, no drama. Just pure work."
+    },
+    {
+      "name": "Daanz",
+      "bio": "Lost a lot? Good. That's how you learn",
+      "image": "/player/daanz.png",
+      "quote": "Professional harvest service from start to finish. They communicated clearly, showed proof of results, and didn't miss a single seed. Highly recommended."
+    },
+    {
+      "name": "Arzachel",
+      "bio": "Noob? Yes. Stupid? No",
+      "image": "/player/arzachel.png",
+      "quote": "I used their harvest service AND builder service. Harvest was fast and clean. Builder made my world look amazing. Two services, zero disappointment."
     }
-  },
-  {
-    "name": "WhyNotJustDied",
-    "role": "",
-    "bio": "Builder",
-    "image": "/player/whynotjustdied.png",
-    "admin": [
-      "Builder"
-    ],
-    "ROTD": {
-      "special": 5,
-      "story": 2,
-      "art": 6
-    }
-  },
-  {
-    "name": "Wony",
-    "role": "",
-    "bio": "Composer",
-    "image": "/player/wony.png",
-    "admin": [
-      "Composer"
-    ],
-    "ROTD": {
-      "special": 5
-    }
-  },
-  {
-    "name": "MyJob",
-    "role": "",
-    "bio": "Developer World Service",
-    "image": "/player/myjob.png",
-    "admin": [
-      "Developer"
-    ],
-    "quote": "Before becoming a Server Admin here, I worked as an Admin Harvester, and that role allowed me, as a newbie, to earn around 2K RT – 6K RT per day. Thank you, World Service!"
-  },
-  {
-    "name": "PIEMEN",
-    "role": "DEV",
-    "bio": "Developer Crystal Realms",
-    "image": "/player/piemen.png",
-    "testimoni": true
-  },
-  {
-    "name": "Anubis",
-    "role": "DEV",
-    "bio": "Developer Crystal Realms",
-    "image": "/player/anubis.png",
-    "testimoni": true
-  },
-  {
-    "name": "Reds",
-    "role": "MOD",
-    "bio": "Red is better than blue",
-    "image": "/player/reds.png",
-    "admin": [
-      "Police"
-    ],
-    "testimoni": true
-  },
-  {
-    "name": "Regas",
-    "role": "MOD",
-    "bio": "Designer by choice, farmer by force",
-    "image": "/player/regas.png",
-    "admin": [
-      "Police"
-    ],
-    "testimoni": true
-  },
-  {
-    "name": "Texhnolyzed",
-    "role": "MOD",
-    "bio": "Blue is better than red",
-    "image": "/player/texhnolyzed.png",
-    "admin": [
-      "Police"
-    ],
-    "testimoni": true
-  },
-  {
-    "name": "NARAKA",
-    "bio": "I trade so much, my fingers hurt",
-    "image": "/player/naraka.png",
-    "testimoni": true
-  },
-  {
-    "name": "Cliipad",
-    "bio": "Rich, quiet, focused",
-    "image": "/player/cliipad.png",
-    "testimoni": true
-  },
-  {
-    "name": "Broz",
-    "bio": "Wealthy player from Indonesia",
-    "image": "/player/broz.png",
-    "testimoni": true
-  },
-  {
-    "name": "STREAMER",
-    "bio": "Wealthy but still grinding",
-    "image": "/player/streamer.png",
-    "testimoni": true
-  },
-  {
-    "name": "Lacielico",
-    "bio": "Fast growing player from Indonesia",
-    "image": "/player/lacielico.png",
-    "testimoni": true,
-    "quote": "Following their market insights and event guides saved my realms token. I flipped rare items just before prices skyrocketed, and I made 150K RT. Thank you!"
-  },
-  {
-    "name": "ROTI",
-    "bio": "Not a billionaire... yet",
-    "image": "/player/roti.png",
-    "testimoni": true,
-    "quote": "Golden Hour music service delivered beyond my expectations. The audio was crystal clear, perfectly synced, and added a professional touch to my world. Highly recommended for anyone who wants a memorable atmosphere."
-  },
-  {
-    "name": "BTAX",
-    "bio": "Market rat since day one",
-    "image": "/player/btax.png",
-    "testimoni": true,
-    "quote": "I am needed a massive spawn castle for our community hub in under a week. Not only did they finish it early, but they also provided daily screenshot updates throughout the entire process."
-  },
-  {
-    "name": "GodSpeed",
-    "bio": "I am the fastest",
-    "image": "/player/godspeed.png",
-    "testimoni": true,
-    "quote": "I can't build to save my life. This builder took my messy idea and turned it into something beautiful. My friends keep asking who made it."
-  },
-  {
-    "name": "Loyal",
-    "bio": "DM me for price. Lowballers = ignored",
-    "image": "/player/loyal.png",
-    "testimoni": true,
-    "quote": "Hired them for harvest. They came on time, worked fast, and sent me a screenshot of the items collected. No scams, no drama. Just pure work."
-  },
-  {
-    "name": "Daanz",
-    "bio": "Lost a lot? Good. That's how you learn",
-    "image": "/player/daanz.png",
-    "quote": "Professional harvest service from start to finish. They communicated clearly, showed proof of results, and didn't miss a single seed. Highly recommended."
-  },
-  {
-    "name": "Arzachel",
-    "bio": "Noob? Yes. Stupid? No",
-    "image": "/player/arzachel.png",
-    "quote": "I used their harvest service AND builder service. Harvest was fast and clean. Builder made my world look amazing. Two services, zero disappointment."
-  }
-]
+  ]
+}

@@ -72,7 +72,7 @@ export default async function Post({ params }: PostProps) {
     notFound();
   }
 
-  const player = Players.find((p) => p.name === postData.author);
+  const player = Players.data.find((p) => p.name === postData.author);
 
   return (
     <article className="mx-auto w-full max-w-3xl p-4">
