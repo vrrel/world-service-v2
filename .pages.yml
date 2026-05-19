@@ -8,177 +8,119 @@ content:
   # ==========================================
   - name: players
     label: Players List
-    type: list
+    type: file # Diperbaiki: Root content hanya bisa 'collection' (folder) atau 'file' (file tunggal)
     path: src/data/players.json
-    exclude_index: true
-    layout: table
-    view:
-      title: name
-      description: bio
-      image: image
     fields:
-      - name: name
-        label: Name
-        type: string
-        required: true
-
-      - name: role
-        label: Role
-        type: select
-        required: false
-        options:
-          - label: CC (Content Creator)
-            value: CC
-          - label: DEV (Developer)
-            value: DEV
-          - label: MOD (Moderator)
-            value: MOD
-
-      - name: bio
-        label: Biography
-        type: text
-        required: false
-
-      - name: image
-        label: Player Image
-        type: image
-        image_dir: public/player
-        public_path: /player
-        required: true
-
-      - name: admin
-        label: Admin Roles
-        type: list
-        required: false
-        field:
-          type: select
-          label: Role Name
-          options:
-            - label: Owner
-              value: Owner
-            - label: Builder
-              value: Builder
-            - label: Composer
-              value: Composer
-            - label: Coordinator
-              value: Coordinator
-            - label: Developer
-              value: Developer
-            - label: Hosting
-              value: Hosting
-            - label: Police
-              value: Police
-            - label: Server Admin
-              value: Server Admin
-
-      - name: testimoni
-        label: Is Testimonial?
-        type: boolean
-        required: false
-        default: false
-
-      - name: quote
-        label: Quote / Testimonial Text
-        type: text
-        required: false
-
-      - name: ROTD
-        label: ROTD Scores
+      # Diperbaiki: Tambahkan pembungkus object list agar bisa membaca array di dalam file JSON
+      - name: data
+        label: Players Data
         type: object
-        required: false
+        list: true
         fields:
-          - name: special
-            label: Special
-            type: number
-            required: false
-          - name: parkour
-            label: Parkour
-            type: number
-            required: false
-          - name: story
-            label: Story
-            type: number
-            required: false
-          - name: art
-            label: Art
-            type: number
-            required: false
+          - { name: name, label: Name, type: string, required: true }
+          - name: role
+            label: Role
+            type: select
+            options:
+              values:
+                - { label: "CC (Content Creator)", value: "CC" }
+                - { label: "DEV (Developer)", value: "DEV" }
+                - { label: "MOD (Moderator)", value: "MOD" }
+          - name: bio
+            label: Biography
+            type: string # Diperbaiki: 'text' bukan tipe standar, gunakan 'string'
+          - name: image
+            label: Player Image
+            type: image
+            options:
+              path: player # Diperbaiki: Menggantikan 'image_dir' dan 'public_path'
+          - name: admin
+            label: Admin Roles
+            type: select # Diperbaiki: Gunakan select multi-pilih alih-alih type: list bersarang
+            options:
+              multiple: true
+              values: [Owner, Builder, Composer, Coordinator, Developer, Hosting, Police, Server Admin]
+          - name: testimoni
+            label: Is Testimonial?
+            type: boolean
+            default: false
+          - name: quote
+            label: Quote / Testimonial Text
+            type: string
+          - name: ROTD
+            label: ROTD Scores
+            type: object
+            fields:
+              - { name: special, label: Special, type: number }
+              - { name: parkour, label: Parkour, type: number }
+              - { name: story, label: Story, type: number }
+              - { name: art, label: Art, type: number }
 
   # ==========================================
   # KONFIGURASI SHOWCASES (JSON)
   # ==========================================
   - name: showcases
     label: Showcases Gallery
-    type: list
+    type: file # Diperbaiki dari 'list'
     path: src/data/showcases.json
-    exclude_index: true
-    layout: grid
-    view:
-      title: label
-      image: src
     fields:
-      - name: label
-        label: World ID / Label
-        type: string
-        required: true
-
-      - name: src
-        label: Showcase Image
-        type: image
-        image_dir: public/showcase
-        public_path: /showcase
-        required: true
+      - name: data
+        label: Showcases Data
+        type: object
+        list: true
+        fields:
+          - { name: label, label: World ID / Label, type: string, required: true }
+          - name: src
+            label: Showcase Image
+            type: image
+            options:
+              path: showcase # Diperbaiki dari 'image_dir'
 
   # ==========================================
   # KONFIGURASI BLOG POSTS (MARKDOWN)
   # ==========================================
   - name: posts
     label: Blog Posts
-    type: collection
-    folder: content/posts
+    type: collection # Sesuai dengan referensi yang benar
+    path: content/posts # Diperbaiki: PagesCMS menggunakan 'path', bukan 'folder'
+    filename: "{fields.title}.md" # Ditambahkan agar CMS tahu format penamaan file baru
+    view:
+      fields: [title, date, author] # Opsional: Memudahkan tampilan list di dashboard CMS
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-
+      - { name: title, label: Title, type: string, required: true }
       - name: excerpt
         label: Description / Excerpt
-        type: text
+        type: string # Diperbaiki dari 'text'
         required: true
-
       - name: date
         label: Publish Date
         type: date
         required: true
-
       - name: updated
         label: Updated Date
         type: date
-
       - name: author
         label: Author
         type: string
         required: true
-
       - name: image
         label: Featured Image
         type: image
-
+        options:
+          path: blog/images # Pastikan folder ini disesuaikan dengan kebutuhan Anda
       - name: urlYoutube
         label: YouTube URL (Opsional)
         type: string
-
       - name: tags
         label: Tags
-        type: string
-        list: true
-
+        type: select # Diperbaiki: Agar UI di CMS menjadi input tag/chip yang rapi
+        options:
+          creatable: true
+          multiple: true
       - name: draft
         label: Status Draft
         type: boolean
         default: false
-
       - name: body
         label: Content
         type: rich-text
