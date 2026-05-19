@@ -2,5 +2,73 @@
   "name": "World Service",
   "discord": "https://discord.gg/F3mhEuTCS",
   "website": "https://worldservice.vercel.app",
-  "avatar": "https://worldservice.vercel.app/main.webp"
+  "avatar": "https://worldservice.vercel.app/main.webp",
+  "privacy": "/#privacy",
+  "terms": "/#terms",
+  "navLinks": [
+    {
+      "name": "Home",
+      "href": "/#hero"
+    },
+    {
+      "name": "About Us",
+      "href": "/#about"
+    },
+    {
+      "name": "Reviews",
+      "href": "/#testimonials"
+    },
+    {
+      "name": "Blog",
+      "href": "/#blog"
+    }
+  ],
+  "links": {
+    "services": [
+      {
+        "name": "Realm Builder",
+        "href": "/#services"
+      },
+      {
+        "name": "Music Service",
+        "href": "/#services"
+      },
+      {
+        "name": "Our Portfolio",
+        "href": "/#portfolio"
+      },
+      {
+        "name": "Pricing Plans",
+        "href": "/#pricing"
+      }
+    ],
+    "company": [
+      {
+        "name": "About Us",
+        "href": "/#about"
+      },
+      {
+        "name": "Official Blog",
+        "href": "/blog"
+      },
+      {
+        "name": "Join Our Team",
+        "href": "/#careers"
+      }
+    ],
+    "support": [
+      {
+        "name": "Help & FAQ",
+        "href": "/#faq"
+      },
+      {
+        "name": "Safety Rules",
+        "href": "/#faq"
+      },
+      {
+        "name": "Contact Support",
+        "href": "/#contact"
+      }
+    ]
+  }
 }

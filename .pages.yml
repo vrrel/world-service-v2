@@ -1,11 +1,17 @@
+media:
+  input: public
+  output: /
+
 content:
+  # ==========================================
+  # KONFIGURASI PLAYERS (JSON)
+  # ==========================================
   - name: players
     label: Players List
     type: list
-    # Sesuaikan path di bawah ini dengan lokasi file JSON kamu di repository
-    path: data/players.json
+    path: src/data/players.json
     exclude_index: true
-    layout: table # Menggunakan tampilan tabel di dashboard agar rapi
+    layout: table
     view:
       title: name
       description: bio
@@ -16,6 +22,20 @@ content:
         type: string
         required: true
 
+      - name: role
+        label: Role
+        type: select
+        required: false
+        options:
+          - label: CC (Content Creator)
+            value: CC
+          - label: DEV (Developer)
+            value: DEV
+          - label: MOD (Moderator)
+            value: MOD
+          - label: None / Player
+            value: ""
+
       - name: bio
         label: Biography
         type: text
@@ -24,45 +44,37 @@ content:
       - name: image
         label: Player Image
         type: image
-        # Jika gambar disimpan di folder lokal, tentukan tempat upload-nya
         image_dir: public/player
         public_path: /player
         required: true
-
-      - name: role
-        label: Role
-        type: select
-        required: false
-        # Menambahkan daftar pilihan untuk dropdown
-        options:
-          - label: CC (Content Creator)
-            value: CC
-          - label: DEV (Developer)
-            value: DEV
-          - label: MOD (Moderator)
-            value: MOD
 
       - name: admin
         label: Admin Roles
         type: list
         required: false
         field:
-          # Mengubah tipe di dalam list menjadi select agar bisa memilih banyak role
           type: select
           label: Role Name
           options:
+            - Owner
             - Builder
             - Composer
             - Coordinator
-            - Hosting
-            - Admin Server
             - Developer
+            - Hosting
+            - Police
+            - Server Admin
 
       - name: testimoni
         label: Is Testimonial?
         type: boolean
         required: false
         default: false
+
+      - name: quote
+        label: Quote / Testimonial Text
+        type: text
+        required: false
 
       - name: ROTD
         label: ROTD Scores
@@ -85,3 +97,83 @@ content:
             label: Art
             type: number
             required: false
+
+  # ==========================================
+  # KONFIGURASI SHOWCASES (JSON)
+  # ==========================================
+  - name: showcases
+    label: Showcases Gallery
+    type: list
+    path: src/data/showcases.json
+    exclude_index: true
+    layout: grid # Menggunakan grid agar gambar lebih jelas terlihat di dashboard
+    view:
+      title: label
+      image: src
+    fields:
+      - name: label
+        label: World ID / Label
+        type: string
+        required: true
+
+      - name: src
+        label: Showcase Image
+        type: image
+        # Menentukan folder tempat upload gambar showcase baru
+        image_dir: public/showcase
+        public_path: /showcase
+        required: true
+
+  # ==========================================
+  # KONFIGURASI BLOG POSTS (MARKDOWN)
+  # ==========================================
+  - name: posts
+    label: Blog Posts
+    type: collection
+    folder: content/posts
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+
+      - name: excerpt
+        label: Description / Excerpt
+        type: text
+        required: true
+
+      - name: date
+        label: Publish Date
+        type: date
+        required: true
+
+      - name: updated
+        label: Updated Date
+        type: date
+
+      - name: author
+        label: Author
+        type: string
+        required: true
+
+      - name: image
+        label: Featured Image
+        type: image
+
+      - name: urlYoutube
+        label: YouTube URL (Opsional)
+        type: string
+
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+
+      - name: draft
+        label: Status Draft
+        type: boolean
+        default: false
+
+      - name: body
+        label: Content
+        type: rich-text
