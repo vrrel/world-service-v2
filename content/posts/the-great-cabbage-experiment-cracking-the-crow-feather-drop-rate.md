@@ -44,11 +44,10 @@ To see if a smaller setup could achieve the same maximum efficiency, the experim
 The comparative results between the two trials were surprisingly consistent:
 
 
-|  |  |  |  |
-| ----------- | ----------------- | -------------------------- | ------------------------ |
-| **Trial** | **Crops Planted** | **Crow Feathers Obtained** | **Calculated Drop Rate** |
-| **Trial 1** | 6,200 | 28 | ~0.45% |
-| **Trial 2** | 781 | 3 | ~0.38% |
+| Trial | Crops Planted | Crow Feathers Obtained | Calculated Drop Rate |
+| ----- | ------------- | ---------------------- | -------------------- |
+| 1 | 6,200 | 28 | ~0.45% |
+| 2 | 781 | 3 | ~0.38% |
 
 
 ---
