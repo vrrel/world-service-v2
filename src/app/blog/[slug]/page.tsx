@@ -29,7 +29,14 @@ export async function generateMetadata({
     };
   }
 
+  const imageUrl = postData.image
+    ? postData.image.startsWith("http")
+      ? postData.image
+      : `https://worldservice.vercel.app${postData.image}`
+    : null;
+
   return {
+    metadataBase: new URL("https://worldservice.vercel.app"), // Menetapkan base URL utama
     title: `${postData.title} | Crystal Realms`,
     description: postData.description,
     openGraph: {
@@ -38,11 +45,13 @@ export async function generateMetadata({
       type: "article",
       publishedTime: postData.date,
       authors: [postData.author || "World Service Team"],
+      images: imageUrl ? [{ url: imageUrl }] : [],
     },
     twitter: {
       card: "summary_large_image",
       title: postData.title,
       description: postData.description,
+      images: imageUrl ? [imageUrl] : [],
     },
   };
 }
