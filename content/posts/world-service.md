@@ -8,5 +8,6 @@ excerpt: World Service is your all-in-one hub for finding workers, landing jobs,
 date: 2026-05-20
 updated: 2026-05-20
 author: IGRIS
+image: /blog/world-service/world-service.png
 draft: true
 ---
