@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "World Service - Premium Crystal Realms Service Provider",
   description:
     "The most trusted service provider in Crystal Realms. Elevate your gaming experience with our professional building, fast grinding, and secure middleman services.",
+  alternates: {
+    canonical: "https://worldservice.vercel.app",
+  },
   keywords: [
     "world service",
     "crystal realms",

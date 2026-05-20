@@ -15,7 +15,6 @@ const getPostData = cache(async (slug: string) => {
 interface PostProps {
   params: Promise<{ slug: string }>;
 }
-
 export async function generateMetadata({
   params,
 }: PostProps): Promise<Metadata> {
@@ -32,13 +31,16 @@ export async function generateMetadata({
   const imageUrl = postData.image
     ? postData.image.startsWith("http")
       ? postData.image
-      : `https://worldservice.vercel.app${postData.image}`
+      : postData.image
     : null;
 
   return {
-    metadataBase: new URL("https://worldservice.vercel.app"), // Menetapkan base URL utama
+    metadataBase: new URL("https://worldservice.vercel.app"),
     title: `${postData.title} | Crystal Realms`,
     description: postData.description,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
     openGraph: {
       title: postData.title,
       description: postData.description,
