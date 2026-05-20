@@ -1,5 +1,6 @@
 ---
-title: world-service
+title: "🌍 World Service: The Best Place to Hire Workers, Find Jobs, and Join as
+  an Admin!"
 excerpt: World Service is your all-in-one hub for finding workers, landing jobs,
   and building your own business as an admin. With a simple process, transparent
   5% tax, equipment lending, and a public feedback board, it’s a fair and
