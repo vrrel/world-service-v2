@@ -3,9 +3,13 @@ export function getRoleColor(role: string): string {
     owner: "text-green-400",
     builder: "text-yellow-400",
     composer: "text-purple-400",
+    artist: "text-cyan-400",
+    hoster: "text-blue-400",
+    broadcaster: "text-purple-500",
     developer: "text-red-400",
     "server admin": "text-red-400",
     police: "text-pink-400",
+    "brand ambassador": "text-cyan-400",
   };
 
   return roleColors[role.toLowerCase()] || "text-gray-400";

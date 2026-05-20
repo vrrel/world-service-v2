@@ -24,10 +24,10 @@ export function Image3D({
     <div className={cn("group relative aspect-[16/9] w-full", className)}>
       <div className="perspective-distant transform-3d">
         {/* Animated background glow */}
-        <div className="absolute rounded-3xl bg-gradient-to-r from-primary/10 via-blue-500/10 to-purple-500/10 opacity-0 blur-2xl transition-all duration-1000 group-hover:opacity-100 sm:-inset-8" />
+        <div className="absolute rounded-3xl bg-gradient-to-r from-primary/10 via-blue-500/10 to-purple-500/10 opacity-0 blur-2xl transition-all duration-1000 group-hover:opacity-100 group-active:opacity-100 sm:-inset-8" />
 
         {/* Main 3D container */}
-        <div className="relative size-full transition-all duration-700 ease-out transform-3d group-hover:translate-z-16 group-hover:rotate-x-8 group-hover:rotate-y-12">
+        <div className="relative size-full transition-all duration-700 ease-out transform-3d group-hover:translate-z-16 group-hover:rotate-x-8 group-hover:rotate-y-12 group-active:translate-z-16 group-active:rotate-x-8 group-active:rotate-y-12">
           {/* Depth layers for 3D effect */}
           <div className="absolute inset-0 translate-x-2 translate-y-4 -translate-z-8 rounded-2xl">
             <div className="size-full rounded-2xl bg-gradient-to-br from-primary/10 via-background/40 to-secondary/10 shadow-xl" />
@@ -40,8 +40,8 @@ export function Image3D({
               className={cn(
                 "pointer-events-none absolute inset-0 z-20 -skew-x-12 bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out",
                 isRight
-                  ? "translate-x-full group-hover:-translate-x-full"
-                  : "-translate-x-full group-hover:translate-x-full",
+                  ? "translate-x-full group-hover:-translate-x-full group-active:-translate-x-full"
+                  : "-translate-x-full group-hover:translate-x-full group-active:translate-x-full",
               )}
             />
 
@@ -62,7 +62,7 @@ export function Image3D({
               width={800}
               height={600}
               className={cn(
-                "block size-full object-cover transition-transform duration-700 group-hover:scale-105 dark:hidden",
+                "block size-full object-cover transition-transform duration-700 group-hover:scale-105 group-active:scale-105 dark:hidden",
                 isRight ? "object-center" : "object-left",
               )}
               loading="lazy"
@@ -74,14 +74,14 @@ export function Image3D({
               width={800}
               height={600}
               className={cn(
-                "hidden size-full object-cover transition-transform duration-700 group-hover:scale-105 dark:block",
+                "hidden size-full object-cover transition-transform duration-700 group-hover:scale-105 group-active:scale-105 dark:block",
                 isRight ? "object-center" : "object-left",
               )}
               loading="lazy"
             />
 
             {/* Border highlight */}
-            <div className="absolute inset-0 rounded-2xl ring-1 ring-white/20 transition-all duration-500 group-hover:ring-primary/40 dark:ring-white/10" />
+            <div className="absolute inset-0 rounded-2xl ring-1 ring-white/20 transition-all duration-500 group-hover:ring-primary/40 group-active:ring-primary/40 dark:ring-white/10" />
           </div>
         </div>
       </div>

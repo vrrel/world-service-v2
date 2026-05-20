@@ -15,7 +15,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Image3D } from "@/components/image-3d";
 
-// English Copywriting: Builder Service (Custom Realm Architecture & Design)
 const mainFeatures = [
   {
     icon: Palette,
@@ -43,7 +42,6 @@ const mainFeatures = [
   },
 ];
 
-// English Copywriting: Music Service (Custom Note Block Composition)
 const secondaryFeatures = [
   {
     icon: Piano,

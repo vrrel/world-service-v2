@@ -39,7 +39,19 @@ content:
             type: select # Diperbaiki: Gunakan select multi-pilih alih-alih type: list bersarang
             options:
               multiple: true
-              values: [Owner, Builder, Composer, Coordinator, Developer, Hosting, Police, Server Admin]
+              values:
+                [
+                  Owner,
+                  Builder,
+                  Composer,
+                  Coordinator,
+                  Hoster,
+                  Artist,
+                  Developer,
+                  Server Admin,
+                  Police,
+                  Brand Ambassador,
+                ]
           - name: testimoni
             label: Is Testimonial?
             type: boolean
@@ -69,7 +81,12 @@ content:
         type: object
         list: true
         fields:
-          - { name: label, label: World ID / Label, type: string, required: true }
+          - {
+              name: label,
+              label: World ID / Label,
+              type: string,
+              required: true,
+            }
           - name: src
             label: Showcase Image
             type: image
