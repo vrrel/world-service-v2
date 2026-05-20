@@ -91,7 +91,7 @@ export function StatsSection() {
           ref={mainTeamRef}
         >
           <div className="flex gap-4">
-            {Players.data.map(
+            {(Players.data as Player[]).map(
               (player, index) =>
                 player.admin && (
                   <div
@@ -133,11 +133,7 @@ export function StatsSection() {
                           ))}
                         </div>
 
-                        {player.ROTD && (
-                          <RotdCarousel
-                            stats={player.ROTD as Record<string, number>}
-                          />
-                        )}
+                        {player.ROTD && <RotdCarousel stats={player.ROTD} />}
                       </div>
                     </div>
                   </div>
