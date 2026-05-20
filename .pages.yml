@@ -63,10 +63,11 @@ content:
             label: ROTD Scores
             type: object
             fields:
-              - { name: special, label: Special, type: number }
-              - { name: parkour, label: Parkour, type: number }
-              - { name: story, label: Story, type: number }
               - { name: art, label: Art, type: number }
+              - { name: music, label: Music, type: number }
+              - { name: parkour, label: Parkour, type: number }
+              - { name: special, label: Special, type: number }
+              - { name: story, label: Story, type: number }
 
   # ==========================================
   # KONFIGURASI SHOWCASES (JSON)
