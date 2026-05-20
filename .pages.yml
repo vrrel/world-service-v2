@@ -135,7 +135,7 @@ content:
         options:
           creatable: true
           multiple: true
-          values: [Investment, Tips, Guide, Crystal Realms, Builder, Composer]
+          values: [Investment, News, Tips, Guide, Crystal Realms, Builder, Composer]
       - name: draft
         label: Status Draft
         type: boolean
