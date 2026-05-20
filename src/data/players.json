@@ -11,10 +11,10 @@
       ],
       "testimoni": false,
       "ROTD": {
-        "special": 4,
+        "art": 1,
         "parkour": 1,
-        "story": 1,
-        "art": 1
+        "special": 4,
+        "story": 1
       }
     },
     {
@@ -26,9 +26,9 @@
       ],
       "testimoni": false,
       "ROTD": {
+        "art": 6,
         "special": 5,
-        "story": 2,
-        "art": 6
+        "story": 2
       }
     },
     {
@@ -41,9 +41,9 @@
       ],
       "testimoni": false,
       "ROTD": {
+        "art": 1,
         "parkour": 1,
-        "story": 1,
-        "art": 1
+        "story": 1
       }
     },
     {
@@ -55,7 +55,8 @@
       ],
       "testimoni": false,
       "ROTD": {
-        "special": 5
+        "art": 2,
+        "music": 6
       }
     },
     {
