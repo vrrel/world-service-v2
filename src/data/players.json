@@ -32,6 +32,21 @@
       }
     },
     {
+      "name": "Rodr",
+      "bio": "Builder",
+      "image": "/player/rodr.png",
+      "admin": [
+        "Builder",
+        "Hosting"
+      ],
+      "testimoni": false,
+      "ROTD": {
+        "parkour": 1,
+        "story": 1,
+        "art": 1
+      }
+    },
+    {
       "name": "Wony",
       "bio": "Composer",
       "image": "/player/wony.png",
