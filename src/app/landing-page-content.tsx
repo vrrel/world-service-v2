@@ -1,4 +1,9 @@
 import { LandingShell } from "@/components/landing/landing-shell";
+import { ServicesSection } from "@/components/landing/services-section";
+import { PortfolioSection } from "@/components/landing/portfolio-section";
+import { PricingSection } from "@/components/landing/pricing-section";
+import { HowItWorksSection } from "@/components/landing/how-it-works-section";
+import { CareersSection } from "@/components/landing/careers-section";
 import { AboutSection } from "./components/about-section";
 import { BlogSection } from "./components/blog-section";
 import { ContactSection } from "./components/contact-section";
@@ -15,14 +20,18 @@ export function LandingPageContent() {
     <LandingShell asMain>
       <HeroSection />
       <LogoCarousel />
+      <ServicesSection />
+      <PortfolioSection />
+      <PricingSection />
+      <HowItWorksSection />
       <StatsSection />
-      <BlogSection />
-      <AboutSection />
       <FeaturesSection />
       <TestimonialsSection />
+      <AboutSection />
       <FaqSection />
       <CTASection />
       <ContactSection />
+      <BlogSection />
     </LandingShell>
   );
 }

@@ -3,72 +3,70 @@
   "discord": "https://discord.gg/F3mhEuTCS",
   "website": "https://worldservice.vercel.app",
   "avatar": "https://worldservice.vercel.app/main.webp",
-  "privacy": "/#privacy",
-  "terms": "/#terms",
+  "privacy": "/#faq",
+  "terms": "/#faq",
+  "stats": {
+    "realmsBuilt": 80,
+    "activeStaff": 12,
+    "averageRating": 5,
+    "reviewCount": 16
+  },
+  "contact": {
+    "orderChannelHint": "#open-ticket",
+    "recruitmentChannelHint": "#apply-staff"
+  },
   "navLinks": [
+    { "name": "Services", "href": "/#services" },
+    { "name": "Portfolio", "href": "/#portfolio" },
+    { "name": "Pricing", "href": "/#pricing" },
+    { "name": "Team", "href": "/#team" },
+    { "name": "Reviews", "href": "/#testimonials" },
+    { "name": "Blog", "href": "/blog" }
+  ],
+  "process": [
     {
-      "name": "Home",
-      "href": "/#hero"
+      "step": 1,
+      "title": "Pick a Service",
+      "description": "Choose Builder, Music, or Harvest support and tell us your vision."
     },
     {
-      "name": "About Us",
-      "href": "/#about"
+      "step": 2,
+      "title": "Submit Your Brief",
+      "description": "Send your request via the form or Discord with World ID, references, and timeline."
     },
     {
-      "name": "Reviews",
-      "href": "/#testimonials"
+      "step": 3,
+      "title": "Confirm & Queue",
+      "description": "We match you with a specialist, confirm scope, and secure your slot in the queue."
     },
     {
-      "name": "Blog",
-      "href": "/#blog"
+      "step": 4,
+      "title": "Daily Progress Updates",
+      "description": "Receive screenshot updates until the build or track is ready for review."
+    },
+    {
+      "step": 5,
+      "title": "Delivery & Support",
+      "description": "Final handoff with revisions covered under your package tier."
     }
   ],
   "links": {
     "services": [
-      {
-        "name": "Realm Builder",
-        "href": "/#services"
-      },
-      {
-        "name": "Music Service",
-        "href": "/#services"
-      },
-      {
-        "name": "Our Portfolio",
-        "href": "/#portfolio"
-      },
-      {
-        "name": "Pricing Plans",
-        "href": "/#pricing"
-      }
+      { "name": "Realm Builder", "href": "/#services" },
+      { "name": "Music Service", "href": "/#services" },
+      { "name": "Harvest & Grind", "href": "/#services" },
+      { "name": "Our Portfolio", "href": "/#portfolio" },
+      { "name": "Pricing Plans", "href": "/#pricing" }
     ],
     "company": [
-      {
-        "name": "About Us",
-        "href": "/#about"
-      },
-      {
-        "name": "Official Blog",
-        "href": "/blog"
-      },
-      {
-        "name": "Join Our Team",
-        "href": "/#careers"
-      }
+      { "name": "About Us", "href": "/#about" },
+      { "name": "Official Blog", "href": "/blog" },
+      { "name": "Join Our Team", "href": "/#careers" }
     ],
     "support": [
-      {
-        "name": "Help & FAQ",
-        "href": "/#faq"
-      },
-      {
-        "name": "Safety Rules",
-        "href": "/#faq"
-      },
-      {
-        "name": "Contact Support",
-        "href": "/#contact"
-      }
+      { "name": "How It Works", "href": "/#process" },
+      { "name": "Help & FAQ", "href": "/#faq" },
+      { "name": "Contact Support", "href": "/#contact" }
     ]
   }
 }

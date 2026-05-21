@@ -1,0 +1,102 @@
+{
+  "note": "Final quotes depend on realm size, song length, and material requirements. Contact us for an exact estimate.",
+  "data": [
+    {
+      "id": "builder-starter",
+      "serviceId": "builder",
+      "name": "Starter Layout",
+      "price": "10K+- RT",
+      "period": "one-time",
+      "description": "Small hub, shop, or arena refresh for growing realms.",
+      "features": [
+        "Up to medium-sized layout",
+        "1 revision round",
+        "3-day average delivery",
+        "Daily progress screenshots"
+      ],
+      "popular": false,
+      "cta": "Order Starter Build"
+    },
+    {
+      "id": "builder-premium",
+      "serviceId": "builder",
+      "name": "Premium ROTD Build",
+      "price": "30+ RT",
+      "period": "one-time",
+      "description": "Full custom world designed to compete for Realm of the Day.",
+      "features": [
+        "Large-scale custom world",
+        "Interior & exterior polish",
+        "2 revision rounds",
+        "Priority builder queue",
+        "Materials package optional"
+      ],
+      "popular": true,
+      "cta": "Commission Premium"
+    },
+    {
+      "id": "music-single",
+      "serviceId": "music",
+      "name": "Single Track Cover",
+      "price": "10K+- RT",
+      "period": "one-time",
+      "description": "One note block arrangement with seamless loop setup.",
+      "features": [
+        "Up to 2-minute cover",
+        "Hidden wiring",
+        "1 revision",
+        "YouTube/reference link accepted"
+      ],
+      "popular": false,
+      "cta": "Order Music Cover"
+    },
+    {
+      "id": "music-realm",
+      "serviceId": "music",
+      "name": "Realm Soundtrack Pack",
+      "price": "30K+ RT",
+      "period": "one-time",
+      "description": "Multiple zones or ambient loops for your entire realm identity.",
+      "features": [
+        "3+ tracks or zones",
+        "BGM atmosphere design",
+        "2 revisions",
+        "Priority composer slot"
+      ],
+      "popular": true,
+      "cta": "Order Soundtrack Pack"
+    },
+    {
+      "id": "harvest-basic",
+      "serviceId": "harvest",
+      "name": "Resource Run",
+      "price": "350+- RT",
+      "period": "per run",
+      "description": "Targeted harvest session with delivery proof.",
+      "features": [
+        "Custom crop/resource list",
+        "Screenshot proof",
+        "Hand-played only",
+        "Same-day for small runs"
+      ],
+      "popular": false,
+      "cta": "Book Harvest Run"
+    },
+    {
+      "id": "harvest-vip",
+      "serviceId": "harvest",
+      "name": "VIP Grind Package",
+      "price": "Custom RT",
+      "period": "weekly",
+      "description": "Recurring grind support for traders and realm owners.",
+      "features": [
+        "Dedicated harvester",
+        "Weekly quota plan",
+        "Priority queue",
+        "Middleman-safe workflow"
+      ],
+      "popular": false,
+      "cta": "Request VIP Quote"
+    }
+  ]
+}

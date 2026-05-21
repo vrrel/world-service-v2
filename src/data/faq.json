@@ -1,0 +1,61 @@
+{
+  "client": [
+    {
+      "value": "client-1",
+      "question": "How do I place an order for Builder or Music services?",
+      "answer": "Choose a service on our Services section, then submit the contact form or open a ticket on Discord. Include your in-game name, World ID, and references so we can quote accurately."
+    },
+    {
+      "value": "client-2",
+      "question": "Is my Crystal Realms account safe during the process?",
+      "answer": "Yes. All work is done by hand by trusted team members. We never use exploits, hacks, or third-party software."
+    },
+    {
+      "value": "client-3",
+      "question": "How long does a custom Realm build take?",
+      "answer": "Small layouts: 1–2 days. Premium ROTD-level worlds: typically 4–7 days depending on complexity and queue."
+    },
+    {
+      "value": "client-4",
+      "question": "Can you recreate any song for the Music Service?",
+      "answer": "Most anime, gaming, and pop references can be adapted. Send a YouTube link and we'll confirm feasibility before starting."
+    },
+    {
+      "value": "client-5",
+      "question": "Do I need to provide materials myself?",
+      "answer": "You can supply materials in chests, or add our full-service materials package to your order."
+    },
+    {
+      "value": "client-6",
+      "question": "Will I get progress updates?",
+      "answer": "Yes — daily screenshots and status updates from the assigned team member until delivery."
+    }
+  ],
+  "staff": [
+    {
+      "value": "staff-1",
+      "question": "How do I join World Service as staff?",
+      "answer": "Scroll to the Careers section, pick your role, and apply via our Discord server. Share your portfolio or past work samples."
+    },
+    {
+      "value": "staff-2",
+      "question": "What is the 5% tax mentioned in your ecosystem?",
+      "answer": "World Service runs a fair marketplace with a 5% tax on completed jobs to fund equipment lending, moderation, and platform upkeep."
+    },
+    {
+      "value": "staff-3",
+      "question": "Do you lend equipment to new staff?",
+      "answer": "Active and verified members can access equipment lending programs — details are shared after you pass the application review."
+    },
+    {
+      "value": "staff-4",
+      "question": "How are jobs assigned?",
+      "answer": "Orders enter a queue on Discord. Admins match jobs to builders, composers, or harvesters based on skill fit and availability."
+    },
+    {
+      "value": "staff-5",
+      "question": "Can I work part-time?",
+      "answer": "Yes. Many staff members take orders around their play schedule. Clear communication and reliable delivery matter more than hours logged."
+    }
+  ]
+}

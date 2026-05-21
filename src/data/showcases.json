@@ -1,52 +1,127 @@
 {
   "data": [
     {
-      "label": "World ID: 0sa8g8nk",
-      "src": "/showcase/0sa8g8nk.png"
+      "worldId": "0sa8g8nk",
+      "label": "World Service",
+      "src": "/showcase/0sa8g8nk.png",
+      "service": "builder",
+      "tags": [
+        "hub",
+        "featured"
+      ],
+      "featured": true
     },
     {
-      "label": "World ID: 7c6s3oyi",
-      "src": "/showcase/7c6s3oyi.png"
+      "worldId": "7c6s3oyi",
+      "label": "Two Mountain",
+      "src": "/showcase/7c6s3oyi.png",
+      "service": "builder",
+      "tags": [
+        "arena"
+      ],
+      "featured": true
     },
     {
-      "label": "World ID: 48vj29we",
-      "src": "/showcase/48vj29we.png"
+      "worldId": "48vj29we",
+      "label": "Britmorel Farm",
+      "src": "/showcase/48vj29we.png",
+      "service": "builder",
+      "tags": [
+        "spawn"
+      ],
+      "featured": false
     },
     {
-      "label": "0twr2btd",
-      "src": "/showcase/0twr2btd.png"
+      "worldId": "0twr2btd",
+      "label": "LEGO JUMP",
+      "src": "/showcase/0twr2btd.png",
+      "service": "builder",
+      "tags": [
+        "layout"
+      ],
+      "featured": false
     },
     {
-      "label": "World ID: iiknbuxo",
-      "src": "/showcase/iiknbuxo.png"
+      "worldId": "iiknbuxo",
+      "label": "RICH",
+      "src": "/showcase/iiknbuxo.png",
+      "service": "builder",
+      "tags": [
+        "rotd"
+      ],
+      "featured": true
     },
     {
-      "label": "World ID: a2qo8lgc",
-      "src": "/showcase/a2qo8lgc.png"
+      "worldId": "a2qo8lgc",
+      "label": "Glowing Vine Farm",
+      "src": "/showcase/a2qo8lgc.png",
+      "service": "builder",
+      "tags": [
+        "interior"
+      ],
+      "featured": false
     },
     {
-      "label": "World ID: ronifkka",
-      "src": "/showcase/ronifkka.png"
+      "worldId": "ronifkka",
+      "label": "ronindrill",
+      "src": "/showcase/ronifkka.png",
+      "service": "builder",
+      "tags": [
+        "hub"
+      ],
+      "featured": true
     },
     {
-      "label": "World ID: fq305rhb",
-      "src": "/showcase/fq305rhb.png"
+      "worldId": "fq305rhb",
+      "label": "Spruce Farm",
+      "src": "/showcase/fq305rhb.png",
+      "service": "builder",
+      "tags": [
+        "market"
+      ],
+      "featured": false
     },
     {
-      "label": "World ID: sysssyw4",
-      "src": "/showcase/sysssyw4.png"
+      "worldId": "sysssyw4",
+      "label": "SLIME SHOP",
+      "src": "/showcase/sysssyw4.png",
+      "service": "builder",
+      "tags": [
+        "parkour"
+      ],
+      "featured": false
     },
     {
-      "label": "World ID: o0pfqld6",
-      "src": "/showcase/o0pfqld6.png"
+      "worldId": "o0pfqld6",
+      "label": "Celestial Duck",
+      "src": "/showcase/o0pfqld6.png",
+      "service": "builder",
+      "tags": [
+        "spawn"
+      ],
+      "featured": true
     },
     {
-      "label": "World ID: kerynudu",
-      "src": "/showcase/kerynudu.png"
+      "worldId": "kerynudu",
+      "label": "Raapy Couldron",
+      "src": "/showcase/kerynudu.png",
+      "service": "music",
+      "tags": [
+        "music",
+        "featured"
+      ],
+      "featured": true
     },
     {
-      "label": "World ID: c51x6fcv",
-      "src": "/showcase/c51x6fcv.png"
+      "worldId": "c51x6fcv",
+      "label": "X Base",
+      "src": "/showcase/c51x6fcv.png",
+      "service": "builder",
+      "tags": [
+        "rotd",
+        "featured"
+      ],
+      "featured": true
     }
   ]
 }
