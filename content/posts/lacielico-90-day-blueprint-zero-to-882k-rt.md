@@ -56,7 +56,7 @@ What did he build? *Farms, drills, cauldrons*, and even a custom designed *world
 
 **Phase 2: The Expansion Phase (Mass Production)**
 Once the foundation was solid, he entered the mass production phase. The focus was no longer on building tools, but on producing semi finished and finished goods. "Phase 2 is the expansion phase, where all base assets are complete, so you focus on collecting goods," he stated.
-This is where he became a production engine. He processed his own raw materials: *Glowing Vines, Morels, Spruce, Sand* all turned into EIJ. He also made minor diversifications, like selling *Glowing Vine, Morel* or turning *Dungeon* results into *Goblin Armor*.
+This is where he became a production engine. He also made minor diversifications, like selling *Glowing Vine, Morel*, or turning Dungeon results into *Goblin Armor just once*; afterward, Dungeon results were converted into *shards instead*.
 
 **Phase 3: The Market Timing Phase (The Pump & Realization)**
 This is the stage of an executor. After stockpiling goods, he plays the market timing. "Phase 3 is the market timing phase, where your goods have piled up, you pump them, and realize the profits to rotate into the next assets. Just repeat," he explained matter of factly.
