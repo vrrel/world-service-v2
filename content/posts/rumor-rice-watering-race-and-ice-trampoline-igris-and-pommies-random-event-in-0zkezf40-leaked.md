@@ -9,16 +9,21 @@ excerpt: "Rumors are circulating among residents of World 0zkezf40: IGRIS and
 date: 2026-05-21
 updated: 2026-05-21
 author: MyJob
+image: /blog/world-service/rumor-igris-and-pommie.png
 tags:
   - News
   - Builder
   - Tips
   - Crystal Realms
-draft: true
+draft: false
 ---
+![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/rumor-igris-and-pommie.png)
+
 As we suspected before, IGRIS' presence in 0zkezf40 was no coincidence. This time, our reporting team managed to contact a source close to the Sultans' circle. Turns out, IGRIS is not working alone; they've teamed up with the expert event creator, Pommie, to design something truly "out of the box."
 
 **Leaked Event Details**
+
+![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/Screenshot_2026-05-20_09-03-50.png)
 
 **A. Event 1: Rice Watering Race**
 
@@ -26,10 +31,14 @@ As we suspected before, IGRIS' presence in 0zkezf40 was no coincidence. This tim
 - **Speculated Mechanics:** "Our source mentioned that Pommie designed the track to force players into a dilemma: speed through but risk spilling the water, or go slow but stay accurate?"
 - **Twist:** Whoever manages to water the most rice paddies while finishing first wins.
 
+![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/Screenshot_2026-05-21_04-34-45.png)
+
 **B. Event 2: Block Ice & Trampoline Race**
 
 - **Concept:** A classic race on ice (slippery) filled with trampoline traps (Ice Blocks).
 - **The Rumor's Effect:** If you step on a trampoline, you'll bounce far backward. "We heard that IGRIS deliberately placed these on sharp turns, making chaos inevitable," said our source.
+
+![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/Screenshot_2026-05-20_09-05-04.png)
 
 **The Grand Prize**
 
@@ -40,6 +49,8 @@ Our source whispered that this is no ordinary event. To hype things up, IGRIS an
 **What Happened?**
 
 When we investigated, residents of 0zkezf40 were already trying to get a head start by practicing on the icy terrain. Some were frustrated by the trampoline bounces, while others were busy hunting for Prism and Demon Wings items in the market.
+
+![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/Screenshot_2026-05-21_04-39-40.png)
 
 **I saw this situation firsthand at 15:48, May 21, 2026.**
 
