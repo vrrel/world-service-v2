@@ -9,7 +9,7 @@ excerpt: "Rumors are circulating among residents of World 0zkezf40: IGRIS and
 date: 2026-05-21
 updated: 2026-05-21
 author: MyJob
-image: /blog/world-service/rumor-igris-and-pommie.png
+image: /blog/world-service/rumor-igris-and-pommie-new.png
 tags:
   - News
   - Builder
@@ -17,7 +17,7 @@ tags:
   - Crystal Realms
 draft: false
 ---
-![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/rumor-igris-and-pommie.png)
+![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/rumor-igris-and-pommie-new.png)
 
 As we suspected before, IGRIS' presence in 0zkezf40 was no coincidence. This time, our reporting team managed to contact a source close to the Sultans' circle. Turns out, IGRIS is not working alone; they've teamed up with the expert event creator, Pommie, to design something truly "out of the box."
 
