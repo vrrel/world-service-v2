@@ -46,6 +46,8 @@ Our source whispered that this is no ordinary event. To hype things up, IGRIS an
 
 *Note: Remember, folks, this is still a rumor! The prize could change or even increase. Keep your eyes peeled! 👀*
 
+![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/Screenshot_2026-05-21_08-38-35.png)
+
 **What Happened?**
 
 When we investigated, residents of 0zkezf40 were already trying to get a head start by practicing on the icy terrain. Some were frustrated by the trampoline bounces, while others were busy hunting for Prism and Demon Wings items in the market.
