@@ -38,9 +38,9 @@ As we suspected before, IGRIS' presence in 0zkezf40 was no coincidence. This tim
 - **Concept:** A classic race on ice (slippery) filled with trampoline traps (Ice Blocks).
 - **The Rumor's Effect:** If you step on a trampoline, you'll bounce far backward. "We heard that IGRIS deliberately placed these on sharp turns, making chaos inevitable," said our source.
 
-![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/Screenshot_2026-05-20_09-05-04.png)
-
 **The Grand Prize**
+
+![IGRIS and Pommie Make Secret Event - Crystal Realms](/blog/world-service/Screenshot_2026-05-20_09-05-04.png)
 
 Our source whispered that this is no ordinary event. To hype things up, IGRIS and Pommie are reportedly preparing **20,000 Real Tokens** as the grand prize, plus the rare **"Prism"** item that has been notoriously hard to find.
 
