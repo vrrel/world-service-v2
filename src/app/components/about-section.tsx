@@ -1,17 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { SectionHeader } from "@/components/landing/section-header";
 import { Card, CardContent } from "@/components/ui/card";
 import { CardDecorator } from "@/components/ui/card-decorator";
-import {
-  MessageCircle,
-  Swords,
-  Hammer,
-  Music,
-  ShieldAlert,
-} from "lucide-react";
-import Data from "@/data/data.json";
+import { DiscordLinkButton } from "@/components/landing/discord-link-button";
+import { Swords, Hammer, Music, ShieldAlert } from "lucide-react";
 
 const values = [
   {
@@ -44,20 +38,12 @@ export function AboutSection() {
   return (
     <section id="about" className="py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="mx-auto mb-16 max-w-4xl text-center">
-          <Badge variant="outline" className="mb-4">
-            About World Service
-          </Badge>
-          <h2 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
-            Built by players, for players
-          </h2>
-          <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            We are passionate veterans from Crystal Realms. Our mission is to
-            eliminate grinding and speed up your progress by providing services
-            in various fields.
-          </p>
-        </div>
+        <SectionHeader
+          maxWidth="4xl"
+          badge="About World Service"
+          title="Built by players, for players"
+          description="We are passionate veterans from Crystal Realms. Our mission is to eliminate grinding and speed up your progress by providing services in various fields."
+        />
 
         {/* Modern Values Grid with Enhanced Design */}
         <div className="mb-12 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 xl:grid-cols-4">
@@ -104,17 +90,11 @@ export function AboutSection() {
                 Place an Order
               </a>
             </Button>
-            <Button
+            <DiscordLinkButton
               size="lg"
-              variant="outline"
+              iconClassName="mr-2 h-5 w-5 text-purple-500"
               className="cursor-pointer bg-background/50 font-semibold backdrop-blur-sm"
-              asChild
-            >
-              <a href={Data.discord} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-5 w-5 text-purple-500" />
-                Join Our Discord
-              </a>
-            </Button>
+            />
           </div>
         </div>
       </div>

@@ -4,11 +4,11 @@ import Image from "next/image";
 import AutoplayPlugin from "embla-carousel-autoplay";
 import { Users, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { AccentBadge } from "@/components/landing/accent-badge";
+import { DiscordLinkButton } from "@/components/landing/discord-link-button";
 import { DotPattern } from "@/components/dot-pattern";
 import useEmblaCarousel from "embla-carousel-react";
 
-import Data from "@/data/data.json";
 import Showcases from "@/data/showcases.json";
 import { CaptionOverlay } from "@/components/ui/caption-overlay";
 
@@ -38,13 +38,9 @@ export function HeroSection() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-8 flex justify-center">
-            <Badge
-              variant="outline"
-              className="flex items-center gap-2 border-purple-500/30 bg-purple-500/5 px-4 py-1.5 text-xs font-semibold backdrop-blur-sm dark:border-purple-400/30 dark:bg-purple-400/5"
-            >
-              <Sparkles className="h-3.5 w-3.5 text-purple-500 dark:text-purple-400" />
+            <AccentBadge icon={Sparkles}>
               The Sovereign Service Guild
-            </Badge>
+            </AccentBadge>
           </div>
 
           <h1 className="mb-6 text-4xl leading-none font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl">
@@ -78,17 +74,13 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
-            <Button
-              variant="outline"
+            <DiscordLinkButton
               size="lg"
+              label="Join Our Staff"
+              icon={Users}
+              iconClassName="mr-2 h-4 w-4 text-purple-500 dark:text-purple-400"
               className="cursor-pointer bg-background/50 text-base font-semibold backdrop-blur-sm"
-              asChild
-            >
-              <a href={Data.discord} target="_blank">
-                <Users className="mr-2 h-4 w-4 text-purple-500 dark:text-purple-400" />
-                Join Our Staff
-              </a>
-            </Button>
+            />
           </div>
         </div>
         <div className="relative mx-auto mt-16 max-w-5xl">

@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { SectionHeader } from "@/components/landing/section-header";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -16,8 +16,9 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { DiscordLinkButton } from "@/components/landing/discord-link-button";
+import { submitToApi } from "@/lib/submit-form";
 import { Mail, MessageCircle, ShieldCheck } from "lucide-react";
-import Data from "@/data/data.json";
 
 const contactFormSchema = z.object({
   firstName: z.string().min(2, {
@@ -48,49 +49,29 @@ export function ContactSection() {
   });
 
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
-    try {
-      // ✅ Panggil API Route, bukan langsung ke Discord
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
-
-      if (response.ok) {
-        alert(
-          "Your order inquiry has been sent to our Discord team! We will contact you shortly.",
-        );
-        form.reset();
-      } else {
-        throw new Error("Failed to send to Discord");
-      }
-    } catch (error) {
-      console.error("Error sending message:", error);
-      alert(
+    const result = await submitToApi("/api/contact", values, {
+      successMessage:
+        "Your order inquiry has been sent to our Discord team! We will contact you shortly.",
+      errorMessage:
         "Something went wrong. Please join our Discord server and contact us directly!",
-      );
+      logLabel: "Contact form",
+    });
+
+    if (result.ok) {
+      form.reset();
     }
   }
 
   return (
     <section id="contact" className="py-24 select-none sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="mx-auto mb-16 max-w-2xl text-center">
-          <Badge variant="outline" className="mb-4 backdrop-blur-sm">
-            Get In Touch
-          </Badge>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-            Ready to Build Your Dream Realm?
-          </h2>
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            Our team is ready to assist you with elite building designs and
-            premium custom music loops. Choose the best way to reach out and
-            commission us.
-          </p>
-        </div>
+        <SectionHeader
+          badge="Get In Touch"
+          title="Ready to Build Your Dream Realm?"
+          description="Our team is ready to assist you with elite building designs and premium custom music loops. Choose the best way to reach out and commission us."
+          titleClassName="mb-4"
+          descriptionClassName="text-lg"
+        />
 
         <div className="grid gap-8 lg:grid-cols-3">
           {/* Contact Options */}
@@ -108,20 +89,11 @@ export function ContactSection() {
                   active boosters, check real-time queues, and view our building
                   portfolio.
                 </p>
-                <Button
-                  variant="outline"
+                <DiscordLinkButton
                   size="sm"
+                  icon={null}
                   className="cursor-pointer font-semibold"
-                  asChild
-                >
-                  <a
-                    href={Data.discord}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Join Our Discord
-                  </a>
-                </Button>
+                />
               </CardContent>
             </Card>
 

@@ -1,7 +1,8 @@
 "use client";
 
-import { BlogCard } from "@/components/blog-card";
-import { Badge } from "@/components/ui/badge";
+import { BlogEmptyState } from "@/components/blog/empty-state";
+import { BlogPageHeader } from "@/components/blog/page-header";
+import { BlogPostGridItem } from "@/components/blog/post-grid-item";
 import {
   Carousel,
   CarouselContent,
@@ -10,7 +11,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { PostData } from "@/lib/blog";
-import { BookOpen } from "lucide-react";
 
 export function BlogSectionClient({ posts }: { posts: PostData[] }) {
   return (
@@ -19,30 +19,14 @@ export function BlogSectionClient({ posts }: { posts: PostData[] }) {
       className="overflow-hidden bg-muted/50 py-24 select-none sm:py-32"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto mb-16 max-w-2xl text-center">
-          <Badge
-            variant="outline"
-            className="mx-auto mb-4 flex w-fit items-center gap-2 border-purple-500/30 bg-purple-500/5"
-          >
-            <BookOpen className="size-3 text-purple-500" />
-            Official Chronicles
-          </Badge>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-            From Our Newsroom
-          </h2>
-          <p className="text-base text-muted-foreground sm:text-lg">
-            Stay ahead of the competition with masterclass guides, economic
-            breakdowns, and building secrets directly from our senior team.
-          </p>
-        </div>
+        <BlogPageHeader
+          badge="Official Chronicles"
+          title="From Our Newsroom"
+          description="Stay ahead of the competition with masterclass guides, economic breakdowns, and building secrets directly from our senior team."
+        />
 
         {posts.length === 0 ? (
-          <div className="rounded-xl border border-dashed border-border/60 bg-background/30 py-12 text-center backdrop-blur-sm">
-            <p className="text-sm font-medium text-muted-foreground">
-              The archives are currently empty. Check back soon for new
-              chronicles!
-            </p>
-          </div>
+          <BlogEmptyState />
         ) : (
           <div className="relative mx-auto w-full max-w-5xl px-4">
             <Carousel
@@ -54,11 +38,8 @@ export function BlogSectionClient({ posts }: { posts: PostData[] }) {
             >
               <CarouselContent className="flex">
                 {posts.map((post) => (
-                  <CarouselItem
-                    key={post.slug}
-                    className="w-full max-w-80 shrink-0"
-                  >
-                    <BlogCard post={post} />
+                  <CarouselItem key={post.slug} className="w-full max-w-80 shrink-0">
+                    <BlogPostGridItem post={post} />
                   </CarouselItem>
                 ))}
               </CarouselContent>

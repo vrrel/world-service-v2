@@ -1,10 +1,10 @@
 "use client";
 
-import { ArrowRight, Sparkles, MessageCircle, Swords } from "lucide-react";
+import { ArrowRight, Sparkles, Swords } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { DiscordLinkButton } from "@/components/landing/discord-link-button";
 import { Separator } from "@/components/ui/separator";
-import Data from "@/data/data.json";
 
 export function CTASection() {
   return (
@@ -72,22 +72,12 @@ export function CTASection() {
                     Commission Us Now
                   </a>
                 </Button>
-                <Button
-                  variant="outline"
+                <DiscordLinkButton
                   size="lg"
+                  iconClassName="me-2 size-5 text-purple-500"
+                  trailingIcon={ArrowRight}
                   className="group cursor-pointer bg-background/50 px-8 py-6 text-base font-semibold backdrop-blur-sm"
-                  asChild
-                >
-                  <a
-                    href={Data.discord}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageCircle className="me-2 size-5 text-purple-500" />
-                    Join Our Discord
-                    <ArrowRight className="ms-2 size-4 transition-transform group-hover:translate-x-1" />
-                  </a>
-                </Button>
+                />
               </div>
 
               {/* Trust Indicators */}

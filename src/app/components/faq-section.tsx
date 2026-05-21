@@ -8,7 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Badge } from "@/components/ui/badge";
+import { SectionHeader } from "@/components/landing/section-header";
 
 type FaqItem = {
   value: string;
@@ -60,20 +60,13 @@ const FaqSection = () => {
   return (
     <section id="faq" className="py-24 select-none sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="mx-auto mb-16 max-w-2xl text-center">
-          <Badge variant="outline" className="mb-4 backdrop-blur-sm">
-            FAQ
-          </Badge>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            Everything you need to know about our premium gaming services,
-            ordering process, and security. Still have questions? We are always
-            here to help!
-          </p>
-        </div>
+        <SectionHeader
+          badge="FAQ"
+          title="Frequently Asked Questions"
+          description="Everything you need to know about our premium gaming services, ordering process, and security. Still have questions? We are always here to help!"
+          titleClassName="mb-4"
+          descriptionClassName="text-lg"
+        />
 
         {/* FAQ Content */}
         <div className="mx-auto max-w-4xl">

@@ -14,7 +14,9 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Logo } from "@/components/logo";
-import { Heart, MessageCircle } from "lucide-react";
+import { DiscordLinkButton } from "@/components/landing/discord-link-button";
+import { submitToApi } from "@/lib/submit-form";
+import { Heart } from "lucide-react";
 import Data from "@/data/data.json";
 
 const newsletterSchema = z.object({
@@ -32,26 +34,15 @@ export function LandingFooter() {
   });
 
   async function onSubmit(values: z.infer<typeof newsletterSchema>) {
-    try {
-      const response = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      });
+    const result = await submitToApi("/api/newsletter", values, {
+      successMessage:
+        "Thank you! You have successfully subscribed to our newsletter updates.",
+      errorMessage: "Something went wrong. Please try again later!",
+      logLabel: "Newsletter subscription",
+    });
 
-      if (response.ok) {
-        alert(
-          "Thank you! You have successfully subscribed to our newsletter updates.",
-        );
-        form.reset();
-      } else {
-        throw new Error("Failed to send to Discord");
-      }
-    } catch (error) {
-      console.error("Error sending subscription:", error);
-      alert("Something went wrong. Please try again later!");
+    if (result.ok) {
+      form.reset();
     }
   }
 
@@ -121,21 +112,11 @@ export function LandingFooter() {
               loops tailored for the Crystal Realms community.
             </p>
             <div className="flex max-md:justify-center">
-              <Button
-                variant="outline"
+              <DiscordLinkButton
                 size="sm"
+                iconClassName="h-4 w-4 text-purple-500"
                 className="cursor-pointer gap-2 font-semibold"
-                asChild
-              >
-                <a
-                  href={Data.discord}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MessageCircle className="h-4 w-4 text-purple-500" />
-                  Join Our Discord
-                </a>
-              </Button>
+              />
             </div>
           </div>
 
