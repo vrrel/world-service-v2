@@ -95,7 +95,7 @@ export default async function Post({ params }: PostProps) {
 
       <div
         dangerouslySetInnerHTML={{ __html: postData.contentHtml || "" }}
-        className="prose max-w-none prose-invert prose-p:text-muted-foreground prose-img:aspect-video prose-img:rounded-2xl"
+        className="prose max-w-none prose-invert prose-p:text-muted-foreground prose-img:aspect-video prose-img:object-cover prose-img:rounded-2xl"
       />
 
       <SeparatorGradient className="my-4" />
