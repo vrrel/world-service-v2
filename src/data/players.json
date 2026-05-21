@@ -47,6 +47,21 @@
       }
     },
     {
+      "name": "Pommie",
+      "role": "CC",
+      "bio": "Content Creator",
+      "image": "/player/pommie.png",
+      "admin": [
+        "Composer",
+        "Artist"
+      ],
+      "testimoni": false,
+      "ROTD": {
+        "music": 1,
+        "special": 1
+      }
+    },
+    {
       "name": "Wony",
       "bio": "Composer",
       "image": "/player/wony.png",
