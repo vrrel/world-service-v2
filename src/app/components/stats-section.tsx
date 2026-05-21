@@ -1,15 +1,15 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
 import { DotPattern } from "@/components/dot-pattern";
-import Image from "next/image";
-import useEmblaCarousel from "embla-carousel-react";
+import { Badge } from "@/components/ui/badge";
 import AutoScroll from "embla-carousel-auto-scroll";
+import useEmblaCarousel from "embla-carousel-react";
+import Image from "next/image";
 
 import Players from "@/data/players.json";
 import { PlayerRole } from "@/utils/player";
-import { stringToROTD } from "@/utils/rotd";
 import { getRoleColor } from "@/utils/role-color";
+import { stringToROTD } from "@/utils/rotd";
 
 export interface Player {
   name: string;
@@ -46,7 +46,7 @@ function RotdCarousel({ stats }: { stats?: Record<string, number> }) {
         {Object.entries(stats).map(([key, value]) => (
           <div
             key={`rotd-slide-${key}`}
-            className="flex w-fit flex-shrink-0 items-center gap-1 select-none"
+            className="flex w-fit shrink-0 items-center gap-1 select-none"
           >
             <img
               src={stringToROTD(key)}
@@ -70,7 +70,7 @@ export function StatsSection() {
 
   return (
     <section id="team" className="relative overflow-hidden py-24 select-none">
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-background via-background/90 to-background/50" />
+      <div className="absolute inset-0 z-0 bg-linear-to-b from-background via-background/90 to-background/50" />
       <DotPattern className="opacity-40" size="md" fadeStyle="ellipse" />
 
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
@@ -107,7 +107,7 @@ export function StatsSection() {
                           src={player.image}
                           className="block w-[80%] object-cover object-top"
                         />
-                        <div className="absolute bottom-0 left-0 h-[50%] w-full bg-gradient-to-b from-background/0 via-background/90 to-background"></div>
+                        <div className="absolute bottom-0 left-0 h-[50%] w-full bg-linear-to-b from-background/0 via-background/90 to-background"></div>
                       </div>
 
                       <div className="absolute bottom-4 left-0 w-full bg-transparent px-4 pt-2 text-center">
@@ -115,7 +115,6 @@ export function StatsSection() {
                           <PlayerRole name={player.name} role={player.role} />
                         </h3>
 
-                        {/* Admin roles dengan warna */}
                         <div className="mb-3 text-balance">
                           {player.admin?.map((adminRole, idx) => (
                             <span

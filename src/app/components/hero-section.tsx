@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import AutoplayPlugin from "embla-carousel-autoplay";
-import { Users, ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
+import { Users, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { DotPattern } from "@/components/dot-pattern";
@@ -10,9 +10,9 @@ import useEmblaCarousel from "embla-carousel-react";
 
 import Data from "@/data/data.json";
 import Showcases from "@/data/showcases.json";
+import { CaptionOverlay } from "@/components/ui/caption-overlay";
 
 export function HeroSection() {
-  // Plugin untuk menggerakkan carousel secara otomatis
   const [emblaRef] = useEmblaCarousel(
     {
       loop: true,
@@ -25,9 +25,8 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-gradient-to-b from-background to-background/80 pt-20 pb-16 sm:pt-28"
+      className="relative overflow-hidden bg-linear-to-b from-background to-background/80 pt-20 pb-16 sm:pt-28"
     >
-      {/* Background Pattern */}
       <div className="absolute inset-0 z-0">
         <DotPattern
           className="opacity-70 dark:opacity-40"
@@ -38,30 +37,26 @@ export function HeroSection() {
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          {/* Announcement Badge */}
           <div className="mb-8 flex justify-center">
             <Badge
               variant="outline"
-              className="flex items-center gap-2 border-purple-500/30 bg-purple-500/5 px-4 py-1.5 text-xs font-semibold backdrop-blur-sm"
+              className="flex items-center gap-2 border-purple-500/30 bg-purple-500/5 px-4 py-1.5 text-xs font-semibold backdrop-blur-sm dark:border-purple-400/30 dark:bg-purple-400/5"
             >
-              <Sparkles className="h-3.5 w-3.5 text-purple-500" />
+              <Sparkles className="h-3.5 w-3.5 text-purple-500 dark:text-purple-400" />
               The Sovereign Service Guild
             </Badge>
           </div>
 
-          {/* Main Headline */}
           <h1 className="mb-6 text-4xl leading-none font-extrabold tracking-tight text-balance sm:text-6xl lg:text-7xl">
             #1 Best{" "}
-            <span className="bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent dark:from-purple-400 dark:to-indigo-400">
+            <span className="bg-linear-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent dark:from-purple-400 dark:to-indigo-400">
               Crystal
             </span>{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent dark:from-purple-400 dark:to-pink-500">
               Realms
             </span>{" "}
             Service
           </h1>
-
-          {/* Subheading */}
           <p className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-xl">
             Stop wasting hours on complex wireframes and trial-and-error note
             blocks. Dominate{" "}
@@ -72,7 +67,6 @@ export function HeroSection() {
             grinding networks built by certified game veterans.
           </p>
 
-          {/* CTA Buttons */}
           <div className="mx-auto flex max-w-xs flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center">
             <Button
               size="lg"
@@ -90,17 +84,14 @@ export function HeroSection() {
               className="cursor-pointer bg-background/50 text-base font-semibold backdrop-blur-sm"
               asChild
             >
-              <a href={Data.discord} target="_blank" rel="noopener noreferrer">
-                <Users className="mr-2 h-4 w-4 text-purple-500" />
+              <a href={Data.discord} target="_blank">
+                <Users className="mr-2 h-4 w-4 text-purple-500 dark:text-purple-400" />
                 Join Our Staff
               </a>
             </Button>
           </div>
         </div>
-
-        {/* Showcase Carousel Visual (Embla with Scale and Auto Scroll) */}
         <div className="relative mx-auto mt-16 max-w-5xl">
-          {/* Background Glow Premium Overlay */}
           <div className="pointer-events-none absolute -top-5 left-1/2 z-0 h-40 w-full -translate-x-1/2 transform rounded-full bg-primary/20 blur-3xl"></div>
 
           <div className="overflow-hidden" ref={emblaRef}>
@@ -108,7 +99,7 @@ export function HeroSection() {
               {Showcases.data.map((showcase, index) => (
                 <div
                   key={`hero-${showcase.src}`}
-                  className="group w-full max-w-xs flex-shrink-0 pr-6 md:max-w-md"
+                  className="group w-full max-w-xs shrink-0 pr-6 md:max-w-md"
                 >
                   <div className="w-full overflow-hidden rounded-2xl border border-border/60 bg-card">
                     <div className="relative w-full">
@@ -117,20 +108,14 @@ export function HeroSection() {
                         alt={showcase.label}
                         width={1280}
                         height={720}
-                        className="aspect-[16/9] w-full rounded-2xl object-cover transition-transform group-hover:scale-105 group-active:scale-105"
+                        className="aspect-video w-full rounded-2xl object-cover transition-transform group-hover:scale-105 group-active:scale-105"
                         priority={index === 1}
                       />
 
                       {/* Gradient Ambient Masking bottom */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-60"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-background/90 via-background/20 to-transparent opacity-60"></div>
 
-                      {/* Caption/World Tag overlay */}
-                      <div className="absolute bottom-4 left-0 w-full px-4 text-center">
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background/50 px-3 py-1 font-mono text-xs text-balance text-muted-foreground backdrop-blur-md">
-                          <ShieldCheck className="size-3.5 text-emerald-500" />
-                          {showcase.label}
-                        </span>
-                      </div>
+                      <CaptionOverlay>{showcase.label}</CaptionOverlay>
                     </div>
                   </div>
                 </div>
