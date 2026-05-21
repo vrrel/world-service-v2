@@ -5,7 +5,7 @@ import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
 
 import { PlayerProfile } from "@/components/player-profile";
-import Players from "@/data/players.json";
+import { getTestimonialPlayers } from "@/lib/players";
 
 export function LogoCarousel() {
   const [emblaRef] = useEmblaCarousel(
@@ -39,19 +39,16 @@ export function LogoCarousel() {
             {/* Embla Viewport */}
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex items-center">
-                {Players.data.map(
-                  (player, index) =>
-                    player.testimoni && (
-                      <div
-                        key={`logos-carousel-${index}`}
-                        className="shrink-0 pr-8 select-none sm:pr-12"
-                      >
-                        <Card className="flex h-16 w-fit items-center justify-center border-0 bg-transparent opacity-100 shadow-none transition-opacity duration-300">
-                          <PlayerProfile player={player} />
-                        </Card>
-                      </div>
-                    ),
-                )}
+                {getTestimonialPlayers().map((player, index) => (
+                  <div
+                    key={`logos-carousel-${index}`}
+                    className="shrink-0 pr-8 select-none sm:pr-12"
+                  >
+                    <Card className="flex h-16 w-fit items-center justify-center border-0 bg-transparent opacity-100 shadow-none transition-opacity duration-300">
+                      <PlayerProfile player={player} />
+                    </Card>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

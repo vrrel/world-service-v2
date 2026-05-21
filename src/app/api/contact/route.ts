@@ -1,19 +1,12 @@
-import { NextResponse } from 'next/server';
+import { sendDiscordWebhook } from "@/lib/discord-webhook";
 
 export async function POST(request: Request) {
-  try {
-    const values = await request.json();
-    const webhookURL = process.env.DISCORD_WEBHOOK_URL_REQUEST;
+  const values = await request.json();
+  const webhookURL = process.env.DISCORD_WEBHOOK_URL_REQUEST;
 
-    if (!webhookURL) {
-      console.error('Webhook URL not configured');
-      return NextResponse.json(
-        { error: 'Server configuration error' },
-        { status: 500 }
-      );
-    }
-
-    const discordMessage = {
+  return sendDiscordWebhook(
+    webhookURL,
+    {
       username: "Order Bot",
       avatar_url: "https://worldservice.vercel.app/bot/order.png",
       embeds: [
@@ -42,25 +35,7 @@ export async function POST(request: Request) {
           },
         },
       ],
-    };
-
-    const response = await fetch(webhookURL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(discordMessage),
-    });
-
-    if (!response.ok) {
-      throw new Error(`Discord API error: ${response.status}`);
-    }
-
-    return NextResponse.json({ success: true });
-
-  } catch (error) {
-    console.error('Contact form error:', error);
-    return NextResponse.json(
-      { error: 'Failed to send message' },
-      { status: 500 }
-    );
-  }
+    },
+    { errorLabel: "Contact form" },
+  );
 }

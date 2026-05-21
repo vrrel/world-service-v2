@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { PostData } from "@/lib/blog";
+import { formatPostDate } from "@/lib/format-date";
 import { ArrowRight, Calendar } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,7 +31,7 @@ export function BlogCard({ post }: BlogCardProps) {
               </p>
               <div className="flex items-center gap-1 text-xs font-medium text-muted-foreground">
                 <Calendar className="size-4" />
-                <span>{post.date}</span>
+                <span>{formatPostDate(post.date)}</span>
               </div>
             </div>
 

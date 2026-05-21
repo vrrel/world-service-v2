@@ -20,8 +20,8 @@ import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { SidebarNotification } from "@/components/sidebar-notification";
 
-import { NavMain } from "@/components/nav-main";
-import { NavUser } from "@/components/nav-user";
+import { NavMain } from "@/components/_template/nav-main";
+import { NavUser } from "@/components/_template/nav-user";
 import {
   Sidebar,
   SidebarContent,

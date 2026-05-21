@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { DiscordLinkButton } from "@/components/landing/discord-link-button";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -76,16 +77,7 @@ export function LandingNavbar() {
 
         {/* Desktop Call To Action (Discord) */}
         <div className="hidden items-center space-x-2 xl:flex">
-          <Button
-            variant="outline"
-            asChild
-            className="cursor-pointer border-border/60 bg-background/50 font-semibold"
-          >
-            <a href={Data.discord} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="mr-1.5 h-4 w-4 text-purple-500" />
-              Join Our Discord
-            </a>
-          </Button>
+          <DiscordLinkButton className="cursor-pointer border-border/60 bg-background/50 font-semibold" />
         </div>
 
         {/* Mobile Navigation Trigger */}
@@ -148,21 +140,11 @@ export function LandingNavbar() {
 
               {/* Drawer Footer Actions */}
               <div className="space-y-4 border-t border-border/40 bg-muted/20 p-6">
-                <Button
-                  variant="outline"
+                <DiscordLinkButton
                   size="lg"
-                  asChild
+                  iconClassName="mr-2 size-4 text-purple-500"
                   className="w-full cursor-pointer border-border/60 bg-background font-bold"
-                >
-                  <a
-                    href={Data.discord}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageCircle className="mr-2 size-4 text-purple-500" />
-                    Join Our Discord
-                  </a>
-                </Button>
+                />
               </div>
             </div>
           </SheetContent>

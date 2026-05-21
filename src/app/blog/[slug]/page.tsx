@@ -1,7 +1,8 @@
 import { PlayerProfile } from "@/components/player-profile";
 import { SeparatorGradient } from "@/components/ui/seperator-gradient";
 import { YouTubeEmbed } from "@/components/ui/youtube-embed";
-import Players from "@/data/players.json";
+import { formatPostDate } from "@/lib/format-date";
+import { getPlayerByName } from "@/lib/players";
 import { getPostData as getRawPostData, getSortedPostsData } from "@/lib/blog";
 import { Calendar } from "lucide-react";
 import { Metadata } from "next";
@@ -74,7 +75,9 @@ export default async function Post({ params }: PostProps) {
     notFound();
   }
 
-  const player = Players.data.find((p) => p.name === postData.author);
+  const player = postData.author
+    ? getPlayerByName(postData.author)
+    : undefined;
 
   return (
     <article className="mx-auto w-full max-w-3xl p-4">
@@ -99,7 +102,7 @@ export default async function Post({ params }: PostProps) {
       <div className="flex shrink-0 flex-col gap-1">
         <div className="flex items-center gap-1 text-muted-foreground">
           <Calendar className="size-4" />
-          <time dateTime={postData.date}>{postData.date}</time>
+          <time dateTime={postData.date}>{formatPostDate(postData.date)}</time>
         </div>
         <span>
           Tags:{" "}

@@ -12,7 +12,8 @@ import {
   Volume2,
   Piano,
 } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { FeatureListItem } from "@/components/landing/feature-list-item";
+import { SectionHeader } from "@/components/landing/section-header";
 import { Image3D } from "@/components/image-3d";
 
 const mainFeatures = [
@@ -73,20 +74,14 @@ export function FeaturesSection() {
   return (
     <section id="features" className="bg-muted/30 py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="mx-auto mb-16 max-w-3xl text-center">
-          <Badge variant="outline" className="mb-4 backdrop-blur-sm">
-            Crystal Realms Premium Services
-          </Badge>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight text-balance sm:text-4xl">
-            Elevate Your Realm to the Ultimate Level
-          </h2>
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            We provide all-in-one professional services ranging from grand
-            architecture to custom musical arrangements, helping you craft a
-            truly unique and unforgettable identity.
-          </p>
-        </div>
+        <SectionHeader
+          maxWidth="3xl"
+          badge="Crystal Realms Premium Services"
+          title="Elevate Your Realm to the Ultimate Level"
+          description="We provide all-in-one professional services ranging from grand architecture to custom musical arrangements, helping you craft a truly unique and unforgettable identity."
+          titleClassName="mb-4 text-balance"
+          descriptionClassName="text-lg"
+        />
 
         {/* First Feature Section - Builder Service */}
         <div className="mb-28 grid items-start gap-12 lg:grid-cols-2 lg:gap-8 xl:gap-16">
@@ -112,25 +107,13 @@ export function FeaturesSection() {
 
             <ul className="grid gap-4 sm:grid-cols-2">
               {mainFeatures.map((feature, index) => (
-                <li
+                <FeatureListItem
                   key={index}
-                  className="group flex cursor-pointer items-start gap-3 rounded-xl bg-transparent p-3 transition-all duration-100 hover:bg-accent/5 active:scale-98 active:bg-accent/10"
-                >
-                  <div className="mt-0.5 flex shrink-0 items-center justify-center">
-                    <feature.icon
-                      className="size-5 text-yellow-500 transition-transform group-hover:scale-110 dark:text-yellow-400"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-semibold text-foreground sm:text-base">
-                      {feature.title}
-                    </h3>
-                    <p className="mt-1 text-xs leading-normal text-muted-foreground sm:text-sm">
-                      {feature.description}
-                    </p>
-                  </div>
-                </li>
+                  icon={feature.icon}
+                  title={feature.title}
+                  description={feature.description}
+                  accent="yellow"
+                />
               ))}
             </ul>
           </div>
@@ -153,25 +136,13 @@ export function FeaturesSection() {
 
             <ul className="grid gap-4 sm:grid-cols-2">
               {secondaryFeatures.map((feature, index) => (
-                <li
+                <FeatureListItem
                   key={index}
-                  className="group flex cursor-pointer items-start gap-3 rounded-xl bg-transparent p-3 transition-all duration-100 hover:bg-accent/5 active:scale-98 active:bg-accent/10"
-                >
-                  <div className="mt-0.5 flex shrink-0 items-center justify-center">
-                    <feature.icon
-                      className="size-5 text-purple-500 transition-transform group-hover:scale-110 dark:text-purple-400"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-semibold text-foreground sm:text-base">
-                      {feature.title}
-                    </h3>
-                    <p className="mt-1 text-xs leading-normal text-muted-foreground sm:text-sm">
-                      {feature.description}
-                    </p>
-                  </div>
-                </li>
+                  icon={feature.icon}
+                  title={feature.title}
+                  description={feature.description}
+                  accent="purple"
+                />
               ))}
             </ul>
           </div>

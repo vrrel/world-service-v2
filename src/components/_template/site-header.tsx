@@ -4,7 +4,7 @@ import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { CommandSearch, SearchTrigger } from "@/components/command-search";
+import { CommandSearch, SearchTrigger } from "@/components/_template/command-search";
 import { ModeToggle } from "@/components/mode-toggle";
 
 export function SiteHeader() {
