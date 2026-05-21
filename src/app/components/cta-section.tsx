@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles, Swords } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { DiscordLinkButton } from "@/components/landing/discord-link-button";
-import { Separator } from "@/components/ui/separator";
+import { TrustMetricsBar } from "@/components/landing/trust-metrics-bar";
 
 export function CTASection() {
   return (
@@ -23,19 +23,7 @@ export function CTASection() {
                   Premium Gaming Service
                 </Badge>
 
-                <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground sm:text-sm">
-                  <span className="flex items-center gap-1.5">
-                    <div className="size-2 rounded-full bg-purple-500" />
-                    80+ Realms Built
-                  </span>
-                  <Separator orientation="vertical" className="!h-4" />
-                  <span className="flex items-center gap-1.5">
-                    <div className="size-2 rounded-full bg-green-500" />
-                    12 Active Admin
-                  </span>
-                  <Separator orientation="vertical" className="!h-4" />
-                  <span>5.0★ Rating</span>
-                </div>
+                <TrustMetricsBar />
               </div>
 
               {/* Main Content */}

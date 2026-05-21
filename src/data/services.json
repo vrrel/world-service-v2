@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "id": "builder",
+      "name": "Realm Builder",
+      "icon": "hammer",
+      "tagline": "Custom worlds built for ROTD-level impact",
+      "description": "Handcrafted mega-structures, hubs, arenas, and interiors by veteran Crystal Realms builders.",
+      "highlights": [
+        "ROTD-competitive layouts",
+        "Daily screenshot updates",
+        "Materials optional add-on"
+      ],
+      "startingPrice": "From 10K RT",
+      "deliveryDays": "4–7 days",
+      "ctaHref": "/#contact"
+    },
+    {
+      "id": "music",
+      "name": "Music Service",
+      "icon": "music",
+      "tagline": "Note block covers & seamless BGM loops",
+      "description": "Turn your favorite tracks into in-game note block arrangements with clean, hidden wiring.",
+      "highlights": [
+        "Anime, pop & custom covers",
+        "Infinite loop engineering",
+        "Best timing"
+      ],
+      "startingPrice": "From 10K RT",
+      "deliveryDays": "2–4 days",
+      "ctaHref": "/#contact"
+    },
+    {
+      "id": "harvest",
+      "name": "Harvest & Grind",
+      "icon": "wheat",
+      "tagline": "Safe farming & resource runs",
+      "description": "Trusted harvesters collect materials and grind resources with proof screenshots—no exploits.",
+      "highlights": [
+        "Verified team members",
+        "Screenshot proof on delivery",
+        "Bulk & recurring orders"
+      ],
+      "startingPrice": "From 75 RT",
+      "deliveryDays": "1–3 days",
+      "ctaHref": "/#contact"
+    }
+  ]
+}

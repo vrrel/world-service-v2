@@ -76,7 +76,14 @@ export function LandingNavbar() {
         </NavigationMenu>
 
         {/* Desktop Call To Action (Discord) */}
-        <div className="hidden items-center space-x-2 xl:flex">
+        <div className="hidden items-center gap-2 xl:flex">
+          <Button
+            size="sm"
+            className="cursor-pointer font-semibold"
+            asChild
+          >
+            <a href="/#contact">Order Now</a>
+          </Button>
           <DiscordLinkButton className="cursor-pointer border-border/60 bg-background/50 font-semibold" />
         </div>
 

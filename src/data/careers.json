@@ -1,0 +1,55 @@
+{
+  "intro": "World Service is a player-run guild ecosystem. We lend equipment, offer fair 5% tax on jobs, and give veterans a path to earn as builders, composers, or harvesters.",
+  "perks": [
+    "Equipment lending for active staff",
+    "Transparent 5% service tax",
+    "Public feedback board & reputation",
+    "Work with DEV/MOD-trusted clients"
+  ],
+  "roles": [
+    {
+      "id": "builder",
+      "title": "Realm Builder",
+      "description": "Design and construct custom Crystal Realms worlds with ROTD-level standards.",
+      "requirements": [
+        "Strong portfolio of in-game builds",
+        "Able to deliver daily screenshot updates",
+        "No exploits or third-party tools"
+      ],
+      "ctaLabel": "Apply as Builder"
+    },
+    {
+      "id": "composer",
+      "title": "Note Block Composer",
+      "description": "Arrange covers and BGM loops with clean redstone timing.",
+      "requirements": [
+        "Experience with note block circuits",
+        "Can reproduce reference tracks accurately",
+        "Patient with revision requests"
+      ],
+      "ctaLabel": "Apply as Composer"
+    },
+    {
+      "id": "harvester",
+      "title": "Harvester / Grinder",
+      "description": "Farm resources and complete grind orders with proof of delivery.",
+      "requirements": [
+        "Reliable schedule & communication",
+        "Screenshot proof on every order",
+        "Account security awareness"
+      ],
+      "ctaLabel": "Apply as Harvester"
+    },
+    {
+      "id": "support",
+      "title": "Support & Orders",
+      "description": "Help manage tickets, client intake, and queue coordination on Discord.",
+      "requirements": [
+        "Clear English or Indonesian communication",
+        "Organized and responsive",
+        "Familiar with Crystal Realms economy"
+      ],
+      "ctaLabel": "Apply for Support"
+    }
+  ]
+}

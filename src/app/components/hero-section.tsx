@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import AutoplayPlugin from "embla-carousel-autoplay";
-import { Users, ArrowRight, Sparkles } from "lucide-react";
+import { Users, ArrowRight, Sparkles, Swords } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AccentBadge } from "@/components/landing/accent-badge";
 import { DiscordLinkButton } from "@/components/landing/discord-link-button";
@@ -63,24 +63,41 @@ export function HeroSection() {
             grinding networks built by certified game veterans.
           </p>
 
-          <div className="mx-auto flex max-w-xs flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center">
-            <Button
-              size="lg"
-              className="group cursor-pointer text-base font-bold shadow-md"
-              asChild
-            >
-              <a href="#features">
-                Explore Services
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
-            </Button>
-            <DiscordLinkButton
-              size="lg"
-              label="Join Our Staff"
-              icon={Users}
-              iconClassName="mr-2 h-4 w-4 text-purple-500 dark:text-purple-400"
-              className="cursor-pointer bg-background/50 text-base font-semibold backdrop-blur-sm"
-            />
+          <div className="mx-auto flex w-full max-w-md flex-col gap-3 sm:max-w-2xl">
+            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-4">
+              <Button
+                size="lg"
+                className="group w-full cursor-pointer text-base font-bold shadow-md sm:w-auto"
+                asChild
+              >
+                <a href="#contact">
+                  <Swords className="mr-2 h-4 w-4" />
+                  Commission Now
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full cursor-pointer bg-background/50 text-base font-semibold backdrop-blur-sm sm:w-auto"
+                asChild
+              >
+                <a href="#services">View Services</a>
+              </Button>
+            </div>
+            <div className="flex justify-center">
+              <Button
+                size="lg"
+                variant="ghost"
+                className="w-full cursor-pointer text-base font-semibold sm:w-auto"
+                asChild
+              >
+                <a href="#careers">
+                  <Users className="mr-2 h-4 w-4 text-purple-500" />
+                  Join Staff
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
         <div className="relative mx-auto mt-16 max-w-5xl">
