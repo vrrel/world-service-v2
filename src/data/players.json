@@ -75,6 +75,15 @@
       }
     },
     {
+      "name": "ikan_lele",
+      "bio": "Content Creator from Indonesia",
+      "image": "/player/ikan_lele.png",
+      "admin": [
+        "Brand Ambassador"
+      ],
+      "testimoni": false
+    },
+    {
       "name": "MyJob",
       "bio": "Developer World Service",
       "image": "/player/myjob.png",
@@ -127,15 +136,6 @@
         "Police"
       ],
       "testimoni": true
-    },
-    {
-      "name": "ikan_lele",
-      "bio": "Content Creator from Indonesia",
-      "image": "/player/ikan_lele.png",
-      "admin": [
-        "Brand Ambassador"
-      ],
-      "testimoni": false
     },
     {
       "name": "NARAKA",
