@@ -56,7 +56,7 @@ What did he build? *Farms, drills, cauldrons*, and even a custom designed *world
 
 **Phase 2: The Expansion Phase (Mass Production)**
 Once the foundation was solid, he entered the mass production phase. The focus was no longer on building tools, but on producing semi finished and finished goods. "Phase 2 is the expansion phase, where all base assets are complete, so you focus on collecting goods," he stated.
-This is where he became a production engine. He also made minor diversifications, like selling *Glowing Vine, Morel*, or turning Dungeon results into *Goblin Armor just once*; afterward, Dungeon results were converted into *shards instead*.
+This is where he became a production engine. He also made minor diversifications, like selling *Glowing Vine, Morel*, or turning Goblin Hideout results into *Goblin Armor just once*; afterward, Goblin Hideout results were converted into *shards instead*.
 
 **Phase 3: The Market Timing Phase (The Pump & Realization)**
 This is the stage of an executor. After stockpiling goods, he plays the market timing. "Phase 3 is the market timing phase, where your goods have piled up, you pump them, and realize the profits to rotate into the next assets. Just repeat," he explained matter of factly.
@@ -89,6 +89,8 @@ A real world setback was also a powerful driver. "My goal in playing this game w
 ![Main world by Lacielico - Crystal Realms](/blog/lacielico/main-world.png)
 
 ### A Sultan's Message: This is Still "The Grind"
+
+![lacielico break EIJ - Crystal Realms](/blog/lacielico/Screenshot_2026-05-21_22-21-54.png)
 
 At the end of the interview, he humbly refused to be called successful. When asked about his current activities, his answer might slap those seeking an instant path:
 
