@@ -45,6 +45,7 @@ content:
                   Builder,
                   Composer,
                   Coordinator,
+                  Worker,
                   Hoster,
                   Artist,
                   Developer,

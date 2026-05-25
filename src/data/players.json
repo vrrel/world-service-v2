@@ -75,6 +75,24 @@
       }
     },
     {
+      "name": "Gifha",
+      "bio": "Coordinator",
+      "image": "/player/gifha.png",
+      "admin": [
+        "Coordinator"
+      ],
+      "testimoni": false
+    },
+    {
+      "name": "24_09_2009",
+      "bio": "Worker",
+      "image": "/player/24_09_2009.png",
+      "admin": [
+        "Worker"
+      ],
+      "testimoni": false
+    },
+    {
       "name": "ikan_lele",
       "bio": "Content Creator from Indonesia",
       "image": "/player/ikan_lele.png",

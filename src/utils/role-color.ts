@@ -6,6 +6,8 @@ export function getRoleColor(role: string): string {
     artist: "text-cyan-400",
     hoster: "text-blue-400",
     broadcaster: "text-purple-500",
+    coordinator: "text-lime-500",
+    worker: "text-cyan-400",
     developer: "text-red-400",
     "server admin": "text-red-400",
     police: "text-pink-400",
