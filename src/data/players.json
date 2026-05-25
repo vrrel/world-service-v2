@@ -113,21 +113,21 @@
     },
     {
       "name": "PIEMEN",
-      "role": "DEV",
+      "role": "Dev",
       "bio": "Developer Crystal Realms",
       "image": "/player/piemen.png",
       "testimoni": true
     },
     {
       "name": "Anubis",
-      "role": "DEV",
+      "role": "Dev",
       "bio": "Developer Crystal Realms",
       "image": "/player/anubis.png",
       "testimoni": true
     },
     {
       "name": "Reds",
-      "role": "MOD",
+      "role": "Mod",
       "bio": "Red is better than blue",
       "image": "/player/reds.png",
       "admin": [
@@ -137,7 +137,7 @@
     },
     {
       "name": "Regas",
-      "role": "MOD",
+      "role": "Mod",
       "bio": "Designer by choice, farmer by force",
       "image": "/player/regas.png",
       "admin": [
@@ -147,7 +147,7 @@
     },
     {
       "name": "Texhnolyzed",
-      "role": "MOD",
+      "role": "Mod",
       "bio": "Blue is better than red",
       "image": "/player/texhnolyzed.png",
       "admin": [

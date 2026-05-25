@@ -7,7 +7,7 @@ export function PlayerRole({ name, role }: { name: string; role?: string }) {
     );
   }
 
-  if (role === "MOD") {
+  if (role === "Mod") {
     return (
       <span className="text-yellow-400">
         {name} [{role}]
@@ -15,7 +15,7 @@ export function PlayerRole({ name, role }: { name: string; role?: string }) {
     );
   }
 
-  if (role === "DEV") {
+  if (role === "Dev") {
     return (
       <span className="text-green-400">
         {name} [{role}]

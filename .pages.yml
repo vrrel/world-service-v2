@@ -24,8 +24,8 @@ content:
             options:
               values:
                 - { label: "CC (Content Creator)", value: "CC" }
-                - { label: "DEV (Developer)", value: "DEV" }
-                - { label: "MOD (Moderator)", value: "MOD" }
+                - { label: "DEV (Developer)", value: "Dev" }
+                - { label: "MOD (Moderator)", value: "Mod" }
           - name: bio
             label: Biography
             type: string # Diperbaiki: 'text' bukan tipe standar, gunakan 'string'
