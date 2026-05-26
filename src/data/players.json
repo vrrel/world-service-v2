@@ -104,7 +104,7 @@
     {
       "name": "MyJob",
       "bio": "Developer World Service",
-      "image": "/player/myjob.png",
+      "image": "/player/myjobv2.png",
       "admin": [
         "Developer"
       ],
