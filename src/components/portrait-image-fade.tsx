@@ -58,11 +58,9 @@ export function PortraitImageFade({
           loading={loading}
           width={120}
           height={120}
-          className="object-cover object-top"
+          className="object-cover object-top [image-rendering:-webkit-optimize-contrast] [image-rendering:pixelated]"
         />
-        <AvatarFallback>
-          {name ? getInitials(name) : "?"}
-        </AvatarFallback>
+        <AvatarFallback>{name ? getInitials(name) : "?"}</AvatarFallback>
         <div className={fadeClassName} />
       </Avatar>
     );
@@ -81,7 +79,7 @@ export function PortraitImageFade({
           height={height}
           alt={alt}
           src={src}
-          className="block w-[80%] object-cover object-top"
+          className="block w-[80%] object-cover object-top [image-rendering:-webkit-optimize-contrast] [image-rendering:pixelated]"
           loading={loading}
         />
         <div className={fadeClassName} />
@@ -103,7 +101,7 @@ export function PortraitImageFade({
         src={src}
         loading={loading}
         alt={alt}
-        className="block w-[80%] object-cover object-top"
+        className="block w-[80%] object-cover object-top [image-rendering:-webkit-optimize-contrast] [image-rendering:pixelated]"
       />
       <div className={fadeClassName} />
     </div>
