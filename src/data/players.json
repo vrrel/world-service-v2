@@ -65,9 +65,6 @@
       "name": "Wony",
       "bio": "Composer",
       "image": "/player/wony.png",
-      "admin": [
-        "Composer"
-      ],
       "testimoni": false,
       "ROTD": {
         "art": 2,
