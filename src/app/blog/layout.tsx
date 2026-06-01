@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     description:
       "Masterclass guides, market analysis, and economy secrets directly from the senior vanguard of the Crystal Realms. Elevate your gameplay today.",
   },
+  other: {
+    "theme-color": "#7289DA",
+  },
 };
 
 export default function BlogLayout({

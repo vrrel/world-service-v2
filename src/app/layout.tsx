@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     description:
       "The most trusted service provider in Crystal Realms. Elevate your gaming experience with our professional building, fast grinding, and secure middleman services.",
   },
+  other: {
+    "theme-color": "#7289DA",
+  },
 };
 
 export default function RootLayout({

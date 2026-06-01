@@ -56,6 +56,9 @@ export async function generateMetadata({
       description: postData.description,
       images: imageUrl ? [imageUrl] : [],
     },
+    other: {
+      "theme-color": "#7289DA",
+    },
   };
 }
 
@@ -75,9 +78,7 @@ export default async function Post({ params }: PostProps) {
     notFound();
   }
 
-  const player = postData.author
-    ? getPlayerByName(postData.author)
-    : undefined;
+  const player = postData.author ? getPlayerByName(postData.author) : undefined;
 
   return (
     <article className="mx-auto w-full max-w-3xl p-4">
@@ -95,7 +96,7 @@ export default async function Post({ params }: PostProps) {
 
       <div
         dangerouslySetInnerHTML={{ __html: postData.contentHtml || "" }}
-        className="prose max-w-none prose-invert prose-p:text-muted-foreground prose-img:aspect-video prose-img:object-cover prose-img:rounded-2xl"
+        className="prose max-w-none prose-invert prose-p:text-muted-foreground prose-table:overflow-x-auto prose-img:aspect-video prose-img:rounded-2xl prose-img:object-cover"
       />
 
       <SeparatorGradient className="my-4" />
