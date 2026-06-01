@@ -7,6 +7,7 @@ excerpt: JJah, recognized by the Crystal Realms developers as one of the best
 date: 2026-05-31
 updated: 2026-05-31
 author: MyJob
+image: /blog/jjah/the-secret-to-becoming-a-pro-builder-crystal-realms-cr.png
 tags:
   - Builder
   - Guide
@@ -24,6 +25,8 @@ How does he build? What separates his work from other players? And can you, who 
 
 ### 1. The Core Foundation: Seeing Structure, Not Just Blocks
 
+![Vergugu, JJah, and MyJob at Map Bloods by JJah - Crystal Realms](/blog/jjah/Screenshot_2026-05-31_20-51-17.png)
+
 For JJah, building begins with perspective. It is not about memorizing cool blocks, but about understanding structure. Before placing a single block, he already thinks about how a form translates into the game's 2D grid, and how color can be used to manipulate the eye into seeing dimension, depth, or certain textures.
 
 This is the approach of an illustrator or painter. He does not see "wood block" or "stone block." He sees tools to create illusion. Do not think "what block looks good." Think "what shape do I want to create, and which block can make it happen." Color is your weapon. Gradation and contrast can create shadows, highlights, and dimension without needing actual 3D effects.
@@ -40,6 +43,8 @@ Nothing is limited. Use shapes, backgrounds, and everything. If the color works,
 
 ### 3. The Process Is Brutal: Place, Break, Repeat
 
+![JJah say open Pinterest, look at a lot of things that look cool, and copy them in the game.](/blog/jjah/Screenshot_2026-05-31_20-45-38.png)
+
 This is an unavoidable reality. Beauty does not appear on the first try. Most players build without thinking, place blocks carelessly, then feel disappointed when the result looks bad. The secret is simple: do not be afraid to destroy your own work. He does not see breaking and rebuilding as failure. It is part of the process, just like a sketch that gets erased and redrawn, or a song revised over and over.
 
 Honestly, building in this game is the same as drawing or painting. JJah himself comes from a *Minecraft* and *Growtopia* background that shaped this mentality. Building in a sandbox game is a living art. It is never finished until you are satisfied. Do not fall in love with blocks already placed. If they do not fit, destroy them. Enjoy the revision process. Every demolition is a step toward a better final result.
@@ -48,6 +53,8 @@ Honestly, building in this game is the same as drawing or painting. JJah himself
 
 ### 4. Do You Need to Know How to Draw? No, But It Helps
 
+![JJah say drawing isn't required to build](/blog/jjah/Screenshot_2026-05-31_20-43-37.png)
+
 JJah has been drawing all his life. Drawing skills do help, especially with understanding perspective. But it is not a mandatory requirement. People who cannot draw can still build well. The solution is simple: open Pinterest, look at a lot of things that look cool, and copy them in the game.
 
 You do not need to be an artist. Just be a good observer. Collect references, copy, modify. Over time, your visual intuition will develop on its own. Interestingly, JJah is not a big fan of pixel art in this game. To him, anyone can do pixel art because even a program can do it. True building work requires a human touch: block selection, shape interpretation, and improvisation. Create a Pinterest board specifically for build references. Collect images of architecture, nature, or other builders' works. Do not be ashamed to copy at the beginning. All great artists started by copying. Pixel art is not the peak of building. Try to surpass it with more complex structural work.
@@ -55,6 +62,8 @@ You do not need to be an artist. Just be a good observer. Collect references, co
 ---
 
 ### 5. How Long Does It Take to Get Good?
+
+![JJah say It can be good and can take a week](/blog/jjah/Screenshot_2026-05-31_20-47-55.png)
 
 There is no definite answer. It all depends on how much effort you want to put in. A build can be good and finished in a week, or you can spend a full month. JJah himself once made a build that took a month, a world named **Bloods** with the ID **bloods9j**.
 
