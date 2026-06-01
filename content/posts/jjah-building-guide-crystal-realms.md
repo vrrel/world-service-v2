@@ -1,5 +1,5 @@
 ---
-title: jjah-building-guide-crystal-realms
+title: "Jjah Guide: No Bad Blocks, No Limits — Secrets of Crystal Realms Best Builder"
 excerpt: Jjah, recognized by the Crystal Realms developers as one of the best
   builders in the game, shares his raw philosophy. No bad blocks, no limits, no
   shortcuts - just structure, color, and the willingness to break and rebuild
@@ -14,8 +14,6 @@ tags:
   - Crystal Realms
 draft: true
 ---
-# Jjah Guide: No Bad Blocks, No Limits — Secrets of Crystal Realms' Best Builder
-
 In the world of *Crystal Realms*, building is not just about placing blocks. It is art, illusion, and expression. One of the most respected names in the builder community is **Jjah**. Even **Piemen**, the game developer, has personally called him one of the best builders.
 
 How does he build? What separates his work from other players? And can you, who might feel untalented, follow in his footsteps? Here is a guide straight from Jjah.
@@ -72,8 +70,9 @@ There are no rules. There is no block police. There are no judges. There is only
 
 **Quick Takeaways from Jjah:**
 
+
 | Principle | Short Explanation |
-|---|---|
+| --------------------------------- | -------------------------------------------------------- |
 | Structure first | Think about form and illusion before blocks |
 | No bad blocks | Every block can be used, find its context |
 | Break and rebuild is mandatory | Don't fear revision, that is the process |
@@ -81,7 +80,10 @@ There are no rules. There is no block police. There are no judges. There is only
 | Time is an investment | Good builds take a week, extraordinary ones take a month |
 | Build what you want | There are no rules, just enjoy it |
 
+
 ---
 
 **World to Visit:**
+
 - **Bloods** — ID: `bloods9j` — A build that took a full month. See Jjah's dedication for yourself.
+
