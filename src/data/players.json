@@ -106,7 +106,10 @@
         "Developer"
       ],
       "testimoni": false,
-      "quote": "Before becoming a Server Admin here, I worked as an Admin Harvester, and that role allowed me, as a newbie, to earn around 2K RT – 6K RT per day. Thank you, World Service!"
+      "quote": "Before becoming a Server Admin here, I worked as an Admin Harvester, and that role allowed me, as a newbie, to earn around 2K RT – 6K RT per day. Thank you, World Service!",
+      "ROTD": {
+        "music": 1
+      }
     },
     {
       "name": "PIEMEN",
