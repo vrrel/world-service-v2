@@ -51,10 +51,6 @@
       "role": "CC",
       "bio": "Content Creator",
       "image": "/player/pommie.png",
-      "admin": [
-        "Composer",
-        "Artist"
-      ],
       "testimoni": false,
       "ROTD": {
         "music": 1,
